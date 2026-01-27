@@ -382,6 +382,47 @@ When company claims 2nd gen is "better" than 1st gen, evaluate systematically:
 
 ---
 
+## QTc as Dose Ceiling (from AG on ACAD)
+
+### The Pattern
+
+**If 1st gen molecule had QTc prolongation limiting dose, and 2nd gen does not, the "dose higher" thesis gains validity.**
+
+| Scenario | QTc Status | Dose Ceiling | Implication |
+|----------|------------|--------------|-------------|
+| 1st gen | QTc prolongation | Safety-limited | May not have reached optimal exposure |
+| 2nd gen | No QTc | Tolerability-limited | Can explore higher doses |
+
+### Application (ACAD/ADP-204)
+
+> "The lack of QTc prolongation enables higher dosing." — AG
+
+| Molecule | QTc | Max Tested | Dose Headroom |
+|----------|-----|------------|---------------|
+| Pimavanserin (1st gen) | Prolongation observed | 34mg | Limited by QTc |
+| ADP-204 (2nd gen) | No signal | 60mg | Can dose 2x higher |
+
+### Integration with E-R Analysis
+
+QTc status changes interpretation of E-R curves:
+
+| E-R Curve Shape (1st gen) | QTc Ceiling? | 2nd Gen Implication |
+|---------------------------|--------------|---------------------|
+| Still rising at max dose | Yes (QTc limited) | **Higher dose may help** — E-R not fully explored |
+| Still rising at max dose | No (tolerability limited) | Higher dose still helpful |
+| Plateau/regression at max | Yes (QTc limited) | **Uncertain** — was plateau from QTc or biology? |
+| Plateau/regression at max | No | **Higher dose unlikely to help** — true biological plateau |
+
+### Key Question
+
+When evaluating 2nd gen "dose higher" thesis:
+
+1. Did 1st gen have QTc (or other safety) ceiling?
+2. If yes → E-R curve may be truncated, higher dose could unlock efficacy
+3. If no → E-R plateau is likely biological, higher dose won't help
+
+---
+
 ## Key Takeaways
 
 1. **"Same drug, different efficacy" may be exposure, not biology**
@@ -392,3 +433,4 @@ When company claims 2nd gen is "better" than 1st gen, evaluate systematically:
 6. **Always ask for weight distribution and plasma concentrations**
 7. **E-R plateau/regression = skepticism of "dose higher" thesis**
 8. **2nd gen improvements only matter if 1st gen was underexposed on the rising part of E-R curve**
+9. **QTc/safety ceilings can truncate E-R curves — 2nd gen without ceiling can explore further**

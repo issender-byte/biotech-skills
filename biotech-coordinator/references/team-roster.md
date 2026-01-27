@@ -205,6 +205,7 @@ Reference file for team member roles, strengths, development areas, and coaching
 | Date | Observation | Status |
 |------|-------------|--------|
 | 2026-01-27 | ACAD pitch: Strong reverend-bayes work (power table, E-R, cross-trial). Led with PoS. Gaps: no implied PoS comparison, thesis tension unresolved, incomplete citations. | Coaching to deliver |
+| 2026-01-27 | ACAD follow-up (AG/MM feedback): Missed 3 key patterns: (1) "Juice left to squeeze" - DB delta is marginal after OL ceiling, not "true" effect; (2) Cross-indication validation - should test methodology on PDP where ground truth exists; (3) NPIC non-linearity - didn't flag scale interpretation issues. Also missed: original PIMA wasn't powered for ADP subpop, QTc absence enables dose headroom. | Senior feedback received |
 | | | |
 
 ---

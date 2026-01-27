@@ -354,7 +354,114 @@ CATALYST ASSESSMENT:
 
 ---
 
-## Framework 5: RW vs Parallel Design Comparison
+## Framework 5: The "Juice Left to Squeeze" Problem
+
+### Core Insight (from MM/AG on ACAD)
+
+**In RW designs, the DB baseline = end of OL (responders at/near ceiling). The remaining DB delta is *marginal* — on top of the OL improvement already captured.**
+
+> "If the baseline for that is the end of the open label period, maybe seeing only a two point delta with minimal incremental drop should be expected. Most of the benefit has already occurred."
+
+### Visual Representation
+
+```
+NPIC Score
+    ^
+    |                                    
+ 30 |●────────────────────────────────── Baseline (sick)
+    |     \
+    |      \
+    |       \
+ 20 |        ●━━━━━━━━━━━━━━━━━━━━━━━━━ End of OL (responders)
+    |         \____ OL Improvement     │
+    |              (the big delta)     │ DB Delta
+    |                                  │ (small, but expected)
+ 18 |                                  ●━━ Drug arm (DB)
+    |                                  
+ 22 |                                  ●━━ Placebo arm (DB, relapsing)
+    |________________________________________> Time
+         OL Period          DB Period
+```
+
+### The Interpretation Error
+
+| WS's Interpretation | Correct Interpretation |
+|---------------------|------------------------|
+| DB delta of ~2 pts = "true drug effect" | DB delta = *marginal* effect after OL selection |
+| Small DB delta = drug doesn't work well | Small DB delta = responders already at ceiling |
+| Focus on DB period alone | Total effect = OL improvement + DB maintenance |
+
+### MM's Analytical Prescription
+
+> "Compare how that drug arm did during the open label portion to what the placebo arm did in the prior study."
+
+**Translation:** The relevant comparison isn't "drug vs placebo in DB period" (which is what the RW measures). It's "OL drug arm improvement vs parallel placebo-controlled improvement in a separate trial."
+
+This requires adjustment:
+- Discount OL for lack of blinding (responder bias, investigator bias)
+- Adjust for baseline differences
+- Account for population selection (RW recruited responders, parallel recruits all comers)
+
+### Application Rule
+
+**When interpreting RW results:**
+1. Calculate the OL improvement (baseline → end of OL)
+2. Calculate the DB delta (end of OL → end of DB)
+3. Total drug effect = OL improvement + DB maintenance value
+4. Don't interpret DB delta in isolation
+
+---
+
+## Framework 6: Cross-Indication Validation Method
+
+### Core Insight (from MM on ACAD)
+
+**Test your delta-derivation methodology on a population where ground truth exists.**
+
+> "Do the same thing with Parkinson's patients. We have a lot of data for the Parkinson's indicator for induction RCTs for Pima. Is the Delta for Parkinson's patients in the withdrawal trial's RCT portion of a similar magnitude to the several phase 3 studies ran in Parkinson's?"
+
+### The Validation Framework
+
+| Step | Action |
+|------|--------|
+| 1 | Apply your methodology to derive delta from RW data in Indication A |
+| 2 | Apply same methodology to derive delta from RW data in Indication B |
+| 3 | Compare Indication B RW-derived delta to actual parallel RCT delta |
+| 4 | If match → methodology validated, apply to Indication A |
+| 5 | If mismatch → methodology suspect, revisit assumptions |
+
+### ACAD Example
+
+| Indication | RW Data Available | Parallel RCT Data Available | Use |
+|------------|-------------------|-----------------------------|----- |
+| ADP (Alzheimer's) | Yes (subgroup) | No | Target (want to predict) |
+| PDP (Parkinson's) | Yes (main trial) | Yes (multiple Ph3s) | Validation set |
+
+**Validation Test:**
+1. Use WS's methodology to derive expected parallel delta from PDP RW data
+2. Compare to actual PDP parallel Phase 3 results
+3. If delta matches → methodology works, apply to ADP
+4. If delta doesn't match → methodology needs revision
+
+### Why This Works
+
+- PDP is "solved" — we know the true parallel RCT effect size
+- Any methodology applied to PDP RW should reproduce the known answer
+- If it doesn't reproduce, it's miscalibrated
+- If it does reproduce, we gain confidence in applying it to ADP
+
+### Generalized Pattern: Use Known Outcomes to Validate Methodology
+
+| Situation | Validation Approach |
+|-----------|---------------------|
+| Extrapolating from RW to parallel | Test on indication with both designs |
+| Cross-trial comparison | Test on trials with similar patients |
+| Biomarker → clinical correlation | Test on drug with both data types |
+| Peak sales model | Backtest on comparable launches |
+
+---
+
+## Framework 7: RW vs Parallel Design Comparison (Delta Compression)
 
 ### Delta Compression Rule (from ACAD/SLNO)
 
@@ -382,7 +489,7 @@ With stats bar at 2.7, this creates low PoS for parallel design.
 
 ---
 
-## Framework 6: Standard Deviation by Design Phase
+## Framework 8: Standard Deviation by Design Phase
 
 ### SD Differences in RW Trials (from ACAD)
 
@@ -405,7 +512,7 @@ When building power tables for RW trials, use SD from the appropriate phase:
 
 ---
 
-## Framework 7: FDA Rejection Despite Stats
+## Framework 9: FDA Rejection Despite Stats
 
 ### Regulatory Risk in Weak Efficacy (from ACAD/Pima)
 

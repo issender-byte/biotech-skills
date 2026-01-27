@@ -195,3 +195,4 @@ RECOMMENDED DILIGENCE:
 | `references/cv-inflammation.md` | CVOTs |
 | `references/pah-pulmonary.md` | PAH/pulmonary indications |
 | `references/ta-hematology-mf.md` | Hematology, myelofibrosis |
+| `references/scale-properties.md` | Non-linear scales, floor/ceiling effects, effect size interpretation |

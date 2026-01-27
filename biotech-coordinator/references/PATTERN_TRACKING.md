@@ -2,7 +2,7 @@
 
 Meta-document tracking analytical patterns extracted from institutional debates, mapped to skills, with implementation status.
 
-**Current file count: 44** (Update this number when adding files)
+**Current file count: 45** (Update this number when adding files)
 
 ---
 
@@ -95,7 +95,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | 19 | CNST | reverend-bayes | MF benchmarks | ta-hematology-mf.md |
 | 20 | AVTX | john-snow | HS market dynamics, IL-1 pathway, NLRP3 read-through, bermekimab correction | ta-hidradenitis-suppurativa.md |
 | 21 | LEGN | john-snow | CAR-T commercial, site-of-care, supply utilization | cell-therapy-commercial.md |
-| 22 | ACAD | reverend-bayes | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, power tables | randomized-withdrawal-design.md, pk-pd-exposure-response.md |
+| 22 | ACAD | reverend-bayes | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, power tables, "juice left to squeeze", cross-indication validation, NPIC non-linearity, QTc dose headroom | randomized-withdrawal-design.md, pk-pd-exposure-response.md, scale-properties.md |
 
 ---
 
@@ -119,6 +119,11 @@ When user provides raw materials (emails, DD notes, management calls):
 | Power table construction | Explicit assumptions: n, SD, effect size, stats bar | ACAD | statistical-framework.md | ✅ |
 | FDA rejection despite stats | Hitting stats ≠ approval; weak efficacy can still fail | ACAD | randomized-withdrawal-design.md | ✅ |
 | 2nd gen molecule comparison | Evaluate PK/potency/safety enabling; improvement must matter for E-R | ACAD | pk-pd-exposure-response.md | ✅ |
+| "Juice left to squeeze" | DB delta is marginal after OL ceiling; total effect = OL + DB | ACAD (MM) | randomized-withdrawal-design.md | ✅ |
+| Cross-indication validation | Test methodology on population with ground truth | ACAD (MM) | randomized-withdrawal-design.md | ✅ |
+| Non-linear scale caution | NPIC, PANSS — point changes ≠ uniform across severity | ACAD (AG) | scale-properties.md | ✅ |
+| QTc dose ceiling | No QTc = higher dose potential = E-R exploration possible | ACAD (AG) | pk-pd-exposure-response.md | ✅ |
+| Subpopulation power | RW in DRP not powered for ADP subgroup — underpowered post-hoc | ACAD (AG) | randomized-withdrawal-design.md | ✅ |
 
 ### john-snow Patterns (Commercial)
 
@@ -206,3 +211,4 @@ Files referenced in memory but not yet created:
 | 2026-01-27 | **TEAM & PROCESS:** Added team-roster.md (ZH, Ben, LA, AK, BS profiles). Added bidirectional clinical-commercial handoff to john-snow. Added stated view requirement to 5pter-template.md. 44 total files. |
 | 2026-01-27 | **REFACTOR:** Deduplicated rNPV content (graham SKILL.md now refs rnpv-methodology.md). Removed duplicate Sources template from biotech-coordinator. Updated skill dependency tree to reflect actual files. All broken refs now in Known Gaps only. |
 | 2026-01-27 | **ACAD (WS):** Added Work Evaluation Protocol to skill-iteration-guide.md. Extracted 5 new patterns: RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, 2nd gen comparison framework, FDA rejection despite stats. Updated randomized-withdrawal-design.md and pk-pd-exposure-response.md. Added WS to team-roster.md. 22 case studies. |
+| 2026-01-27 | **ACAD (AG/MM feedback):** Added 5 new patterns from senior feedback: "juice left to squeeze", cross-indication validation, non-linear scale caution, QTc dose ceiling, subpopulation power. Created scale-properties.md (NEW). Updated randomized-withdrawal-design.md (Frameworks 5-6), pk-pd-exposure-response.md (QTc section), team-roster.md (WS progress). 45 files. |
