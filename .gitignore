@@ -1,0 +1,8 @@
+# Local logs
+logs/
+
+# Windows null device artifact
+nul
+
+# Local Claude settings
+.claude/settings.local.json
