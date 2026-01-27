@@ -4,6 +4,38 @@ Reference file for team member roles, strengths, development areas, and coaching
 
 ---
 
+### RP - Analyst
+
+**Primary Skills:** reverend-bayes (clinical read-through, biomarker validation, kinetics analysis)
+
+**Role:** Clinical analysis with strong emphasis on prior failure read-through, biomarker coherence, and data quality assessment.
+
+**Strengths:**
+- **Prior failure search discipline** - Searches clinicaltrials.gov for mechanism + indication. Found MEDI8968 (IL-1R) failure in HS that others missed.
+- **Biomarker validation framework** - "If biomarker moves as expected, underdosed thesis is refuted." MAS825 IL-6 down 50%, MEDI8968 CRP/fibrinogen down in COPD.
+- **Time-course kinetics analysis** - Notes inconsistent separation, high dose = placebo at intermediate timepoints. "Kinetics are odd."
+- **Positive control benchmarking** - Compares to Bimzelx (known winner) to establish "what good kinetics look like."
+- **Error bar discipline** - Notes when CIs are wide/overlapping and what that means for confidence.
+- **Questions assumptions** - Challenged "underdosed" thesis with specific biomarker evidence.
+
+**Development Areas:**
+- TBD - early observation period
+
+**Coaching Approach:**
+- Leverage his rigor to set standards for others
+- Use his analyses as teaching examples
+
+**Key Analytical Contributions:**
+1. MEDI8968 (IL-1R) failure in HS read-through - most damning evidence against IL-1 single-isoform thesis
+2. Biomarker-clinical disconnect pattern - target engagement ≠ clinical efficacy
+3. Time-course consistency framework - consistent separation > end-of-study separation
+4. Positive control benchmarking - what does success look like?
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| 2026-01-27 | AVTX analysis: Contributed 6 new patterns - MEDI8968 failure, biomarker validation, kinetics analysis, positive control benchmarking, error bar discipline, dose-response coherence. Set analytical standard for team. | Exemplary |
+
 ## Team Overview
 
 | Member | Role | Primary Skill | Key Strength | Development Focus |
@@ -15,6 +47,7 @@ Reference file for team member roles, strengths, development areas, and coaching
 | LA | Science/Commercial Hybrid | reverend-bayes + john-snow | Mechanistic analysis, provenance | Stating views, commercial integration |
 | BS | Analyst | reverend-bayes | TBD | TBD |
 | WS | Biostatistician | reverend-bayes | Power analysis, E-R, cross-trial comparison | Implied PoS back-solve, thesis resolution |
+| RP | Analyst | reverend-bayes | Prior failure search, biomarker validation, kinetics | TBD |
 
 ---
 
@@ -37,6 +70,7 @@ Reference file for team member roles, strengths, development areas, and coaching
 1. **Engaging contrary evidence** - Tendency to dismiss or ignore data that challenges thesis. Example: AVTX pitch didn't address bermekimab or MAS825 read-through.
 2. **Intellectual honesty about uncertainty** - Overstates confidence (75% PoS on AVTX without addressing key mechanism debate).
 3. **Factual accuracy** - Claimed "IL-1β is elevated but not IL-1α" which was incorrect.
+4. **Prior failure search** - Didn't search clinicaltrials.gov for prior IL-1 trials in HS. MEDI8968 (IL-1R) failed in HS - directly relevant read-through. Standard practice: search "[mechanism] + [indication]" on clinicaltrials.gov before pitching.
 
 **Coaching Approach:**
 - Have him write the bear thesis in his own words before discussing
@@ -51,6 +85,7 @@ Reference file for team member roles, strengths, development areas, and coaching
 | Date | Observation | Status |
 |------|-------------|--------|
 | 2026-01-26 | AVTX pitch: Good setup, didn't address bermekimab/MAS825 | Coaching delivered |
+| 2026-01-27 | AVTX follow-up (RP feedback): Missed MEDI8968 (IL-1R) failure in HS (NCT01838499). This is critical read-through - if blocking the receptor (which captures ALL IL-1α/β signaling) failed, why would blocking one ligand work? Should have searched clinicaltrials.gov for IL-1 + HS. Also didn't benchmark kinetics against Bimzelx or note wide error bars. RP also contributed: (1) Biomarker validation defeats "underdosed" thesis - MAS825 IL-6 down 50%, MEDI8968 CRP/fibrinogen down in COPD = target engagement happened but didn't translate clinically; (2) Time-course kinetics - high dose = placebo at Week 8 on HiSCR75, inconsistent separation is red flag; (3) Positive control discipline - compare to Bimzelx which shows consistent separation. All demonstrate analytical rigor ZH should aspire to. | Additional gaps identified (RP) |
 | | | |
 
 ---

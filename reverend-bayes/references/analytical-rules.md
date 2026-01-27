@@ -1,6 +1,6 @@
 # Analytical Rules
 
-48 rules (45 main + 3 sub-rules) for evaluating clinical trial design, data integrity, and thesis validation. Apply these to ANY thesis - your own analysis, sellside reports, or management claims.
+53 rules (50 main + 3 sub-rules) for evaluating clinical trial design, data integrity, and thesis validation. Apply these to ANY thesis - your own analysis, sellside reports, or management claims.
 
 ---
 
@@ -128,27 +128,45 @@
 
 ---
 
+## Time-Course & Kinetics Analysis Rules (from RP)
+
+38. **Consistent separation > end-of-study separation** - A real drug effect shows early and maintains. If drug separates only at final timepoint (or bounces around at intermediate timepoints), could be statistical fluctuation. Compare your drug's kinetics to a positive control in same indication.
+
+39. **High dose = placebo at intermediate timepoints = red flag** - If there's no dose-response at multiple timepoints but separation emerges at end, skepticism is warranted. Real pharmacology should show consistent patterns.
+
+40. **Positive control benchmarking** - Before interpreting your drug's kinetics, establish what "good" looks like. Find an approved drug in same indication (e.g., Bimzelx in HS) and compare separation patterns. If comparator shows consistent separation and your drug doesn't, flag it.
+
+41. **Error bar discipline** - Look at confidence intervals, not point estimates. Wide CIs mean:
+   - High variability in response
+   - Small sample size  
+   - Low confidence in the point estimate
+   If CIs for drug and placebo overlap substantially, the "separation" may be noise.
+
+42. **Biomarker kinetics vs clinical kinetics** - If biomarker drops fast (e.g., IL-1β knockdown within days) but clinical response is slow or inconsistent, question whether target engagement translates to clinical benefit.
+
+---
+
 ## Mechanism-Efficacy Ceiling Rules
 
-38. **Biomarker ceiling effect** - Beyond a threshold, more biomarker improvement may not translate to more clinical improvement. (Example: 10% and 50% spleen reduction may show similar symptom improvement.)
+43. **Biomarker ceiling effect** - Beyond a threshold, more biomarker improvement may not translate to more clinical improvement. (Example: 10% and 50% spleen reduction may show similar symptom improvement.)
 
-39. **Toxicity-symptom offset** - If drug mechanism causes toxicity that worsens the symptom endpoint (fatigue from heme tox worsening fatigue component of TSS), the drug is fighting itself. Net effect may be zero even with biomarker improvement.
+44. **Toxicity-symptom offset** - If drug mechanism causes toxicity that worsens the symptom endpoint (fatigue from heme tox worsening fatigue component of TSS), the drug is fighting itself. Net effect may be zero even with biomarker improvement.
 
 ---
 
 ## Data Provenance Rules
 
-40. **Citation before assertion** - NEVER state specific numbers (response rates, deltas, n's) without a traceable source. "Bermekimab showed 37% vs 37%" requires citation. If you don't have a source, say "I don't have bermekimab data - worth checking."
+45. **Citation before assertion** - NEVER state specific numbers (response rates, deltas, n's) without a traceable source. "Bermekimab showed 37% vs 37%" requires citation. If you don't have a source, say "I don't have bermekimab data - worth checking."
 
-41. **Distinguish data tiers** - Peer-reviewed publication > conference abstract > press release > analyst report > "I recall seeing" > fabrication. Label your confidence accordingly.
+46. **Distinguish data tiers** - Peer-reviewed publication > conference abstract > press release > analyst report > "I recall seeing" > fabrication. Label your confidence accordingly.
 
-42. **Absence of mention ≠ Absence of data** - If an analyst doesn't cite a competitor trial, they may not have data (reasonable) or may be ignoring contrary evidence (concerning). Don't assume the latter without evidence.
+47. **Absence of mention ≠ Absence of data** - If an analyst doesn't cite a competitor trial, they may not have data (reasonable) or may be ignoring contrary evidence (concerning). Don't assume the latter without evidence.
 
-43. **Check your own citations** - Before criticizing someone for "not addressing X," verify X exists as you characterize it. Inventing contrary evidence to critique someone is worse than the error you're criticizing.
+48. **Check your own citations** - Before criticizing someone for "not addressing X," verify X exists as you characterize it. Inventing contrary evidence to critique someone is worse than the error you're criticizing.
 
-44. **Source documents trump memory** - If you "remember" a trial result but can't find the source, flag it as uncertain. Memory is unreliable; documents are not.
+49. **Source documents trump memory** - If you "remember" a trial result but can't find the source, flag it as uncertain. Memory is unreliable; documents are not.
 
-45. **Hallucination red flags** - Be especially cautious when: (a) stating specific percentages, (b) claiming something "failed" or "succeeded," (c) characterizing data you haven't directly viewed, (d) the data conveniently supports your thesis.
+50. **Hallucination red flags** - Be especially cautious when: (a) stating specific percentages, (b) claiming something "failed" or "succeeded," (c) characterizing data you haven't directly viewed, (d) the data conveniently supports your thesis.
 
 ---
 
@@ -161,20 +179,22 @@
 | High dropout rate | 9-12, 30-31, 36-37 |
 | Combination trial | 13, 23 |
 | Composite endpoint | 5-6, 8, 32-33 |
-| Competitor failed | 19-21, **40-44** |
+| Competitor failed | 19-21, **45-49** |
 | Data looks too good | 35-37 |
-| Symptom endpoint | 6, 14, 22, 38-39 |
-| **Critiquing someone else's work** | **40-45** |
-| **Stating trial results** | **40-42, 44-45** |
+| Symptom endpoint | 6, 14, 22, 43-44 |
+| **Interpreting time-course data** | **38-42** |
+| **Critiquing someone else's work** | **45-50** |
+| **Stating trial results** | **45-47, 49-50** |
 
 ---
 
 ## Sources
 
 - MF DD session (KPTI selinexor + rux): Rules 1-26
-- KPTI bull/bear analysis: Rules 27-39
+- KPTI bull/bear analysis: Rules 27-37
+- **AVTX IL-1 mechanism debate (Jan 2026, RP): Rules 38-42** - Time-course analysis, error bar discipline, positive control benchmarking. RP flagged Luti kinetics inconsistency and MEDI8968 biomarker validation defeating "underdosed" thesis.
 - GOSS PAH analysis: Subgroup skepticism patterns
 - PGEN gene therapy: Dropout tracking patterns
-- **AVTX bermekimab hallucination incident (Jan 2026): Rules 40-45** - Fabricated "37% vs 37%" data when critiquing analyst work; actual Tanni et al data was 60% vs 10%. Lesson: citation before assertion.
+- **AVTX bermekimab hallucination incident (Jan 2026): Rules 45-50** - Fabricated "37% vs 37%" data when critiquing analyst work; actual Tanni et al data was 60% vs 10%. Lesson: citation before assertion.
 
 *See also: management-due-diligence.md for detailed DD frameworks and checklists*

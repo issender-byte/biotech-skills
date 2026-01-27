@@ -2,7 +2,7 @@
 
 Meta-document tracking analytical patterns extracted from institutional debates, mapped to skills, with implementation status.
 
-**Current file count: 45** (Update this number when adding files)
+**Current file count: 46** (Update this number when adding files)
 
 ---
 
@@ -64,7 +64,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | SLNO Commercial | Jan 2026 | SLNO | Intraquarter tracking, capture rate, persistence curves |
 | PGEN Gene Therapy | Jan 2026 | PGEN | Bolus product commercial, PSF tracking, KOL dosing |
 | MF DD Session | Jan 2026 | KPTI, CNST | 39 analytical rules, management DD checklist |
-| AVTX HS Analysis | Jan 2026 | AVTX | HS competitive landscape, IL-1β framework |
+| AVTX HS Analysis | Jan 2026 | AVTX | HS competitive landscape, IL-1β framework, **MEDI8968 read-through, time-course analysis (RP)** |
 | LEGN CAR-T | Jan 2026 | LEGN | Site-of-care dynamics, partner portfolio, supply utilization |
 | **ACAD ADP Analysis (WS)** | Jan 2026 | ACAD | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, 2nd gen comparison framework, power table construction |
 
@@ -93,7 +93,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | 17 | Fintepla | reverend-bayes | E-R mapping | pk-pd-exposure-response.md |
 | 18 | KPTI | reverend-bayes | MF benchmarks, DD framework | ta-hematology-mf.md |
 | 19 | CNST | reverend-bayes | MF benchmarks | ta-hematology-mf.md |
-| 20 | AVTX | john-snow | HS market dynamics, IL-1 pathway, NLRP3 read-through, bermekimab correction | ta-hidradenitis-suppurativa.md |
+| 20 | AVTX | john-snow | HS market dynamics, IL-1 pathway, NLRP3 read-through, bermekimab correction, **MEDI8968 failure read-through**, **biomarker validates dosing**, **time-course kinetics**, **error bar discipline** | ta-hidradenitis-suppurativa.md |
 | 21 | LEGN | john-snow | CAR-T commercial, site-of-care, supply utilization | cell-therapy-commercial.md |
 | 22 | ACAD | reverend-bayes | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, power tables, "juice left to squeeze", cross-indication validation, NPIC non-linearity, QTc dose headroom | randomized-withdrawal-design.md, pk-pd-exposure-response.md, scale-properties.md |
 
@@ -124,6 +124,12 @@ When user provides raw materials (emails, DD notes, management calls):
 | Non-linear scale caution | NPIC, PANSS — point changes ≠ uniform across severity | ACAD (AG) | scale-properties.md | ✅ |
 | QTc dose ceiling | No QTc = higher dose potential = E-R exploration possible | ACAD (AG) | pk-pd-exposure-response.md | ✅ |
 | Subpopulation power | RW in DRP not powered for ADP subgroup — underpowered post-hoc | ACAD (AG) | randomized-withdrawal-design.md | ✅ |
+| Same-receptor failure read-through | If blocking receptor (all ligand signaling) failed, why would partial block work? | AVTX (RP) | ta-hidradenitis-suppurativa.md | ✅ |
+| Biomarker validates dosing | If biomarker moves as expected, can't claim underdosed; defeats that thesis | AVTX (RP) | ta-hidradenitis-suppurativa.md, analytical-rules.md | ✅ |
+| Target engagement ≠ clinical efficacy | CRP/fibrinogen down but trial failed → mechanism doesn't translate | AVTX (RP) | ta-hidradenitis-suppurativa.md | ✅ |
+| Consistent separation > end-of-study | Drug should separate early and maintain; end-only separation = red flag | AVTX (RP) | analytical-rules.md (38-42) | ✅ |
+| Error bar discipline | Wide CIs = high variability, low confidence; overlapping CIs = noise | AVTX (RP) | analytical-rules.md (41) | ✅ |
+| Positive control benchmarking | Compare kinetics to known winner in same indication (e.g., Bimzelx) | AVTX (RP) | analytical-rules.md (40) | ✅ |
 
 ### john-snow Patterns (Commercial)
 
@@ -212,3 +218,4 @@ Files referenced in memory but not yet created:
 | 2026-01-27 | **REFACTOR:** Deduplicated rNPV content (graham SKILL.md now refs rnpv-methodology.md). Removed duplicate Sources template from biotech-coordinator. Updated skill dependency tree to reflect actual files. All broken refs now in Known Gaps only. |
 | 2026-01-27 | **ACAD (WS):** Added Work Evaluation Protocol to skill-iteration-guide.md. Extracted 5 new patterns: RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, 2nd gen comparison framework, FDA rejection despite stats. Updated randomized-withdrawal-design.md and pk-pd-exposure-response.md. Added WS to team-roster.md. 22 case studies. |
 | 2026-01-27 | **ACAD (AG/MM feedback):** Added 5 new patterns from senior feedback: "juice left to squeeze", cross-indication validation, non-linear scale caution, QTc dose ceiling, subpopulation power. Created scale-properties.md (NEW). Updated randomized-withdrawal-design.md (Frameworks 5-6), pk-pd-exposure-response.md (QTc section), team-roster.md (WS progress). 45 files. |
+| 2026-01-27 | **AVTX (RP feedback):** Added 6 new patterns from RP: MEDI8968 failure read-through, biomarker validates dosing, target engagement ≠ efficacy, time-course consistency, error bar discipline, positive control benchmarking. Updated ta-hidradenitis-suppurativa.md, analytical-rules.md (now 53 rules with new Time-Course section 38-42), team-roster.md (ZH development area #4). Created time-course-kinetics.md (NEW comprehensive reference). 46 files. |

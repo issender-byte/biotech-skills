@@ -71,6 +71,7 @@ IL-1α behaves as an "alarmin" and can be abundant/early in cutaneous inflammati
 | Bermekimab | IL-1α only | 60% | 10% | **+50%** | 20 | Promising (but small N) |
 | Lutikizumab | IL-1α + IL-1β | 59.5% | 35% | ~24.5% | Large | Ph3 advancing |
 | MAS825 | IL-1β + IL-18 | ~44% | ~35% | ~9% | — | Underwhelming |
+| **MEDI8968** | **IL-1R (blocks both)** | — | — | — | — | **FAILED in HS (NCT01838499)** |
 | AVTX-009 | IL-1β only | ? | ? | ? | — | TBD |
 
 **CORRECTION:** Earlier analysis cited bermekimab as failed with 0% delta. Actual data from Tanni et al Ph2 (n=20): HiSCR 60% vs 10% pbo at 12 weeks. The small N creates uncertainty, but the signal was NOT zero.
@@ -89,6 +90,75 @@ Given bermekimab's actual signal (60% vs 10%), the debate shifts:
 1. If IL-1α alone shows meaningful efficacy, why would IL-1β alone (AVTX) match dual inhibition?
 2. Strong biologic rationale exists for IL-1α contribution (alarmin, inflammasome-independent)
 3. AVTX bulls need to argue IL-1β is primary driver despite IL-1α evidence
+
+---
+
+### MEDI8968 (IL-1R) Failure — Critical Read-Through (from RP)
+
+**The Most Damning Evidence Against IL-1 Single-Isoform Thesis:**
+
+> "Medimmune IL-1R failed in HS" — NCT01838499
+
+**Why IL-1R Failure Is More Informative Than Single Ligand Trials:**
+
+| Approach | What It Blocks | HS Outcome | Implication |
+|----------|----------------|------------|-------------|
+| IL-1R antagonist (MEDI8968) | Both IL-1α AND IL-1β signaling | **FAILED** | Blocking entire pathway didn't work |
+| IL-1α only (bermekimab) | IL-1α only | Small signal (n=20) | Unclear |
+| IL-1β only (AVTX-009) | IL-1β only | TBD | If IL-1R failed, why would partial block work? |
+| Dual trap (Luti) | IL-1α + IL-1β | Ph3 advancing | Mechanism difference vs receptor block? |
+
+**The Logic Problem:**
+If blocking the receptor (which captures ALL IL-1α and IL-1β signaling) didn't work, blocking just one ligand is unlikely to work. Unless:
+1. MEDI8968 was underdosed (but see COPD biomarker evidence below)
+2. Trap vs receptor mechanism differs meaningfully
+3. The trial had execution issues
+
+### Biomarker Validation Defeats "Underdosed" Thesis (from RP)
+
+**MAS825 CVD Study:**
+> "A single dose of MAS825 SC performed as expected with IL-6 down about 50% similar to NLRP3 class and higher than what CANTOS showed" — RP
+
+**MEDI8968 COPD Study:**
+> "Medimmune IL-1R in COPD demonstrated a statistically significant reduction in serum concentrations of C-reactive protein (CRP), fibrinogen, and blood neutrophil counts suggesting to me dosing may not be an issue." — RP
+
+**Pattern: Biomarker Movement Defeats "Underdosed" Thesis**
+
+| Evidence | "Underdosed" Thesis | "Mechanism Doesn't Work" Thesis |
+|----------|---------------------|----------------------------------|
+| Biomarker doesn't move | ✓ Supports | ✗ |
+| Biomarker moves as expected | ✗ | ✓ Supports |
+| MAS825 IL-6 down 50% | — | **Supports mechanism skepticism** |
+| MEDI8968 CRP, fibrinogen down | — | **Supports mechanism skepticism** |
+
+**Key Insight:** If the drug hits its pharmacological target (biomarkers move), you cannot claim underdosing. The target engagement happened — it just didn't translate to clinical efficacy.
+
+### Time-Course/Kinetics Analysis (from RP)
+
+**RP's Observation on MAS825/Luti Kinetics:**
+> "The kinetics are super odd to me, we know IL-1β biomarkers drop fast but if we look at the curves at many time points the high dose is no different than placebo. At week 8, all the arms are basically the same on HiSCR75. Compare this with Bimzelx where its consistently separated from placebo across most timepoints."
+
+**Pattern: Consistent Separation > End-of-Study Separation**
+
+| Pattern | What It Suggests |
+|---------|------------------|
+| Drug separates early and maintains | Real drug effect |
+| Drug separates only at final timepoint | Possible noise, regression artifact |
+| Drug = placebo at multiple timepoints, separates at end | **Red flag — could be statistical fluctuation** |
+| High dose = placebo at Week 8 | **Very concerning** |
+
+**Bimzelx as Positive Control:**
+Using a known successful drug as the benchmark for "what good kinetics look like" is excellent analytical discipline. If Bimzelx shows consistent separation and your drug doesn't, that's a signal.
+
+**Error Bar Discipline:**
+> "Error bars are super wide for ABBV pasted on Leo's pictures above" — RP
+
+Wide confidence intervals mean:
+- High variability in response
+- Small sample size
+- Low confidence in the point estimate
+
+If the CIs for drug and placebo overlap substantially, the "separation" is noise.
 
 **Important Finding:** Literature shows BOTH IL-1α AND IL-1β are elevated in HS lesional skin. Claims that "only IL-1β is elevated" are factually incorrect.
 
@@ -266,6 +336,9 @@ ZH's original model issues:
 3. **Luti inverse dose-response unexplained** - 300mg EW did worse than 300mg EOW. Did Luti leave efficacy on table?
 4. **Population mismatch** - Lutikizumab in biologic-failures, LOTUS broader
 5. **Endpoint mismatch** - Lutikizumab HiSCR50, AVTX-009 HiSCR75
+6. **MEDI8968 (IL-1R) failure not flagged** - IL-1 receptor antagonist already failed in HS (NCT01838499). If blocking the receptor didn't work, why would blocking one ligand work? (from RP)
+7. **Biomarker validation ignored** - MAS825 IL-6 down 50%, MEDI8968 CRP/fibrinogen down in COPD. Target engagement happened but didn't translate to efficacy. "Underdosed" thesis doesn't hold. (from RP)
+8. **Time-course kinetics not analyzed** - High dose = placebo at Week 8 on HiSCR75. Inconsistent separation is a red flag vs Bimzelx benchmark. (from RP)
 
 ### Key Debate (Refined)
 
@@ -279,6 +352,9 @@ ZH's original model issues:
 - Strong biologic rationale for IL-1α as "alarmin" (inflammasome-independent)
 - Luti's dual blockade captures both pathways
 - Why would IL-1β alone match dual inhibition?
+- **MEDI8968 (IL-1R) already failed in HS** - blocking the receptor (both isoforms) didn't work (from RP)
+- **Biomarker validation defeats "underdosed" thesis** - MAS825 and MEDI8968 hit pharmacological targets but failed clinically (from RP)
+- **Kinetics are inconsistent** - high dose = placebo at multiple timepoints, unlike Bimzelx (from RP)
 
 ### Recommended Work Before Sizing
 

@@ -190,6 +190,7 @@ RECOMMENDED DILIGENCE:
 | `references/statistical-framework.md` | Bayesian methodology |
 | `references/scorecard-rubric.md` | Detailed scoring criteria |
 | `references/randomized-withdrawal-design.md` | Enrichment designs, Period 1/2 power analysis |
+| `references/time-course-kinetics.md` | Efficacy curve interpretation, consistent separation, error bar discipline |
 | `references/novel-target-safety.md` | Novel target safety assessment |
 | `references/immuno-inflammation.md` | I&I indications |
 | `references/cv-inflammation.md` | CVOTs |
