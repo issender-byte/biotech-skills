@@ -1,0 +1,315 @@
+# Braidwell Team Roster
+
+Reference file for team member roles, strengths, development areas, and coaching notes. Updated iteratively as team grows and develops.
+
+---
+
+## Team Overview
+
+| Member | Role | Primary Skill | Key Strength | Development Focus |
+|--------|------|---------------|--------------|-------------------|
+| IS | CIO/Senior PM | biotech-coordinator | Synthesis, pattern extraction, coaching | — |
+| AK | PM | graham, keynes | Position management | TBD |
+| ZH | Analyst | reverend-bayes | Idea generation, model building | Engaging contrary evidence |
+| Ben | Commercial Analyst | john-snow | IP, competitive positioning, molecule history | Clinical bar definition, stating views |
+| LA | Science/Commercial Hybrid | reverend-bayes + john-snow | Mechanistic analysis, provenance | Stating views, commercial integration |
+| BS | Analyst | reverend-bayes | TBD | TBD |
+| WS | Biostatistician | reverend-bayes | Power analysis, E-R, cross-trial comparison | Implied PoS back-solve, thesis resolution |
+
+---
+
+## Individual Profiles
+
+### ZH - Analyst (Clinical/Idea Generation)
+
+**Primary Skills:** reverend-bayes, graham (model building)
+
+**Role:** Identify investment opportunities, build initial thesis and valuation model, pitch ideas to team.
+
+**Strengths:**
+- Good pattern recognition on setups
+- Finds interesting opportunities
+- Builds structurally sound valuation models (scenario analysis, BIC/me-too/fail buckets)
+- Thinks about dose-response and competitive positioning
+- Frames key debates correctly
+
+**Development Areas:**
+1. **Engaging contrary evidence** - Tendency to dismiss or ignore data that challenges thesis. Example: AVTX pitch didn't address bermekimab or MAS825 read-through.
+2. **Intellectual honesty about uncertainty** - Overstates confidence (75% PoS on AVTX without addressing key mechanism debate).
+3. **Factual accuracy** - Claimed "IL-1β is elevated but not IL-1α" which was incorrect.
+
+**Coaching Approach:**
+- Have him write the bear thesis in his own words before discussing
+- Ask "What's the best argument against this?" before sizing
+- Require explicit engagement with competitor failures/read-throughs
+- Check factual claims against literature
+
+**Coaching Script (Post-AVTX):**
+> "ZH, you found a good setup and the model mechanics are solid. The gap is intellectual honesty about contrary evidence. You dismissed bermekimab and MAS825 as 'not relevant' without engaging with them. Good analysts steel-man the bear case, not explain it away. Next pitch, write out the bear thesis first - that exercise reveals where assumptions are weakest."
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| 2026-01-26 | AVTX pitch: Good setup, didn't address bermekimab/MAS825 | Coaching delivered |
+| | | |
+
+---
+
+### Ben - Commercial Analyst
+
+**Primary Skills:** john-snow
+
+**Role:** Molecule history, IP/exclusivity analysis, competitive landscape, peak sales estimation, commercial positioning.
+
+**Strengths:**
+- Excellent molecule provenance research (ownership chains, indication pivots)
+- Strong IP/exclusivity analysis (COM expiry, BPCIA, royalty structures)
+- Good competitive landscape mapping with sources
+- Sophisticated frameworks (SSE vs DSE biosimilar dynamics)
+- Connects PK to commercial positioning (half-life → dosing interval)
+
+**Development Areas:**
+1. **Clinical bar definition** - Gives peak sales scenarios without defining what efficacy data distinguishes them. Commercial needs to tell clinical "here's what the data needs to show."
+2. **Stating views** - Provides analysis without conclusions. Doesn't give PoS input or recommend position.
+3. **Competitive timing** - Says "not significantly behind" without quantifying the gap.
+
+**Coaching Approach:**
+- Require clinical bar for each commercial scenario
+- Ask "What HiSCR delta separates your me-better from me-too?"
+- Push for specific launch timing assumptions
+- Remind that commercial informs clinical, not just receives from it
+
+**Coaching Script (Post-AVTX):**
+> "Ben, this is strong commercial work - molecule history, IP timeline, comp landscape, biosimilar dynamics. Two things would make it actionable: First, define the clinical bar. You said $1.5bn vs $750mn - what efficacy delta separates those? That's the handoff back to clinical. Second, competitive timing - 'not significantly behind' needs a number. Is it 6 months? 18 months?"
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| 2026-01-26 | AVTX analysis: Good commercial work, no clinical bar, no stated view | Coaching delivered |
+| | | |
+
+---
+
+### LA - Science/Commercial Hybrid
+
+**Primary Skills:** reverend-bayes + john-snow
+
+**Role:** Bridge between clinical science and commercial analysis. Mechanistic deep dives, competitor read-through, pathway mapping.
+
+**Strengths:**
+- Identifies core debates quickly and accurately
+- Excellent provenance discipline (every claim cited)
+- Strong mechanistic reasoning (pathway mapping, read-through logic)
+- Intellectual honesty (acknowledges uncertainty, presents both sides)
+- Corrects others' errors with actual data (bermekimab correction)
+
+**Development Areas:**
+1. **Stating views** - Lays out debates beautifully but doesn't say where he lands. Analysis reads like literature review, not investment recommendation.
+2. **Commercial integration** - Despite hybrid role, delivers 100% science without connecting to commercial scenarios.
+3. **Decision criteria** - Identifies uncertainty but doesn't define what data would resolve it.
+
+**Coaching Approach:**
+- Require a stated PoS at end of every analysis
+- Ask "After all this work, where do you come out?"
+- Push for explicit mapping of mechanism debates to commercial scenarios
+- Ask "If you're uncertain, what would resolve it?"
+
+**Coaching Script (Post-AVTX):**
+> "LA, this is the best piece of work in the thread. You identified the core debate, cited sources, mapped the mechanism, and flagged uncertainty honestly. Two things would make it complete: First, state a view - you've laid out why IL-1α might matter and why there's uncertainty. Where do you land? Is your PoS closer to ZH's 75% or 40-55%? Second, connect to commercial - Ben gave us $1.5bn vs $750mn. Does the IL-1α debate map to those scenarios? You're the bridge - build it explicitly."
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| 2026-01-26 | AVTX analysis: Excellent mechanistic work, no stated view, no commercial connection | Coaching delivered |
+| | | |
+
+---
+
+### AK - Portfolio Manager
+
+**Primary Skills:** graham, keynes
+
+**Role:** Position sizing, risk management, portfolio construction, catalyst timing.
+
+**Strengths:**
+- TBD - need more observations
+
+**Development Areas:**
+- TBD - need more observations
+
+**Coaching Approach:**
+- TBD
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| | | |
+
+---
+
+### BS - Analyst
+
+**Primary Skills:** reverend-bayes (based on NLRP3 contribution)
+
+**Role:** TBD
+
+**Strengths:**
+- Contributed NLRP3/NEK7 read-through logic (AVTX → BIOA/GLUE)
+- Kelly et al, Tyczyńska et al citations
+
+**Development Areas:**
+- TBD - need more observations
+
+**Coaching Approach:**
+- TBD
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| 2026-01-26 | AVTX: Contributed NLRP3 read-through with citations | Noted |
+| | | |
+
+---
+
+### WS - Biostatistician / Idea Generation
+
+**Primary Skills:** reverend-bayes (statistical framework, power analysis, E-R)
+
+**Role:** Biostatistician who also generates investment ideas. Evaluate trial designs, power assumptions, cross-trial comparisons.
+
+**Strengths:**
+- Leads with stated PoS (doesn't bury conclusions)
+- Builds explicit power tables with sourced assumptions
+- Strong dose-response / E-R analysis
+- Good cross-trial design comparison (parallel vs RW, SLNO analog)
+- Flags key uncertainties (E-R plateau concern)
+- Endpoint granularity awareness (scale ranges, SD differences)
+- Historical context integration (prior failures, FDA feedback)
+
+**Development Areas:**
+1. **Valuation/implied PoS gap** - Gives PoS but doesn't compare to market implied. Can't act on 30% PoS without knowing if market is at 15% or 50%.
+2. **Thesis tension resolution** - Flags concerns (E-R plateau) but doesn't fully resolve how they inform the PoS. Make logic explicit.
+3. **Citation completeness** - Has specific numbers but doesn't always cite sources (PK data, preclinical claims).
+4. **Commercial framing** - Not his primary role, but one sentence on market size/competitive context would help.
+
+**Coaching Approach:**
+- Acknowledge strong statistical work first
+- Push for "so what" - implied PoS comparison
+- Ask him to make thesis logic explicit when flagging concerns
+- Light touch on commercial - not his lane, but helpful context
+
+**Coaching Script (Post-ACAD):**
+> "WS, this is strong reverend-bayes work. You led with 30% PoS, built a power table, did real E-R analysis, and flagged the plateau concern. Three things would make it actionable: First, what's the market implying? If ACAD implies 50%, this is a short. Second, resolve the plateau tension - you flagged it but didn't say how it informs your 30%. Third, add sources for the PK/preclinical numbers."
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| 2026-01-27 | ACAD pitch: Strong reverend-bayes work (power table, E-R, cross-trial). Led with PoS. Gaps: no implied PoS comparison, thesis tension unresolved, incomplete citations. | Coaching to deliver |
+| | | |
+
+---
+
+## Team Integration Patterns
+
+### The AVTX Example
+
+The AVTX thread showed classic integration failure:
+
+| Analyst | Contribution | Gap |
+|---------|--------------|-----|
+| ZH | Setup, model, thesis | Didn't engage contrary evidence |
+| Ben | IP, commercial, comp landscape | Didn't define clinical bar |
+| LA | Mechanism debate, citations | Didn't state view or connect to commercial |
+
+**The team had all the pieces but didn't integrate them.**
+
+ZH's model + Ben's commercial framework + LA's mechanism analysis = complete thesis
+
+But no one synthesized it.
+
+### Required Integration Points
+
+For any investment thesis, ensure:
+
+```
+INTEGRATION CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CLINICAL → COMMERCIAL:
+□ Mechanism debates mapped to commercial scenarios
+□ PoS provided for each commercial bar
+□ Competitor read-through implications stated
+
+COMMERCIAL → CLINICAL:
+□ Clinical bar defined for each peak sales scenario
+□ What efficacy data distinguishes scenarios?
+□ Secondary differentiation factors identified
+
+SYNTHESIS:
+□ Someone owns the integrated view (PM or coordinator)
+□ Prob-weighted EV calculated
+□ Position sizing recommendation made
+□ Everyone stated a view (even if tentative)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+## Coaching Philosophy
+
+### Core Principles
+
+1. **Everyone states a view** - Analysis without a conclusion is a literature review. Tentative views that get updated are more valuable than no view.
+
+2. **Engage contrary evidence** - Good analysts steel-man the bear case. Dismissing contrary data is a correctable habit, not a fundamental flaw.
+
+3. **Bidirectional handoffs** - Clinical and commercial inform each other. Neither is independent.
+
+4. **Provenance discipline** - Every number needs a source. "I recall seeing" is not a citation.
+
+5. **Public markets urgency** - We don't have weeks to analyze. Form a view, update it as data comes in.
+
+### Coaching Cadence
+
+| Frequency | Activity |
+|-----------|----------|
+| Per pitch | Quick feedback on gaps, stated view requirement |
+| Weekly | Pattern review - what did we learn? |
+| Monthly | Individual development check-ins |
+| Quarterly | Role clarity and skill progression |
+
+### Development Tracking
+
+For each team member, track:
+- Specific incidents (what happened)
+- Coaching delivered (what we said)
+- Progress observed (did it improve?)
+- Patterns (recurring issues vs one-offs)
+
+---
+
+## Role Clarity Matrix
+
+| Question Type | Primary Owner | Supporting |
+|---------------|---------------|------------|
+| "Will the trial succeed?" | ZH, LA, BS, WS (reverend-bayes) | — |
+| "What's the power/stats?" | WS (biostatistician) | ZH, LA |
+| "What are peak sales?" | Ben, LA (john-snow) | reverend-bayes for clinical bar |
+| "What's it worth?" | ZH (graham) | All (inputs) |
+| "What does market think?" | AK (keynes) | — |
+| "How does it fit portfolio?" | AK, IS (simons) | — |
+| "What's the mechanism debate?" | LA (science/commercial) | ZH, BS |
+| "What's the competitive landscape?" | Ben (commercial) | LA |
+| "What's the IP/exclusivity?" | Ben (commercial) | — |
+| "Is the trial well-powered?" | WS (biostatistician) | — |
+| "What's the E-R relationship?" | WS, LA (reverend-bayes) | — |
+
+---
+
+## Version History
+
+| Date | Update |
+|------|--------|
+| 2026-01-27 | Initial creation from AVTX thread analysis |
+| 2026-01-27 | Added WS profile (biostatistician) from ACAD analysis |
+|  |  |
