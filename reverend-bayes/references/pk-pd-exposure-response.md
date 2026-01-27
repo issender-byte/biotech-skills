@@ -423,6 +423,185 @@ When evaluating 2nd gen "dose higher" thesis:
 
 ---
 
+## Withdrawal Study Mining for Durability Floor (from APGE/RP)
+
+### The Pattern
+
+**When evaluating extended dosing intervals (Q3M, Q6M, annual), search for competitor withdrawal/discontinuation studies. The efficacy loss with complete drug withdrawal establishes the worst-case floor.**
+
+### Why This Works
+
+Withdrawal studies show what happens when drug concentration → zero. If efficacy loss is modest even with zero exposure, extended dosing intervals that maintain *some* trough should perform at least that well.
+
+### Example: Ebglyss Withdrawal in Atopic Dermatitis
+
+| Arm | EASI-75 Maintenance | Interpretation |
+|-----|---------------------|----------------|
+| Lebrikizumab Q2W | 70.8% | On-drug reference |
+| Lebrikizumab Q4W | 71.2% | Extended interval ≈ Q2W |
+| **Lebrikizumab Withdrawal** | **60.0%** | **Complete withdrawal floor** |
+
+**Delta:** Only 10-11% efficacy loss with complete drug withdrawal.
+
+**Implication for APGE Q6M:** If complete withdrawal loses only 10-11%, a Q6M regimen maintaining meaningful Ctrough should lose less than that. This bounds the downside.
+
+### Application Framework
+
+```
+1. Find competitor withdrawal/discontinuation data
+2. Calculate efficacy delta: [On-drug] - [Withdrawal] = [Max loss]
+3. Compare your regimen's Ctrough to withdrawal (Ctrough ≈ 0)
+4. If your Ctrough >> 0, efficacy loss should be < max loss
+5. Use withdrawal efficacy as floor for your extended dosing
+```
+
+### When to Search for Withdrawal Data
+
+| Situation | Search for Withdrawal Data? |
+|-----------|----------------------------|
+| Evaluating Q3M+ dosing intervals | Yes - establishes floor |
+| Drug has long half-life (>2 weeks) | Yes - durability question |
+| Competitor has approved extended dosing | Yes - may have withdrawal data |
+| Drug targets pathway with sustained effects | Yes - may show durability even off-drug |
+
+### Source: RP APGE Analysis (Jan 2025)
+
+> "The proportions of lebrikizumab responders who maintained EASI 75 with no or minimal fluctuations were 70.8% (lebrikizumab Q2W), 71.2% (lebrikizumab Q4W), and 60.0% (lebrikizumab withdrawal). This suggests to me that if you completely withdrawal drug, you lose 10-11% efficacy but suggests there is quite a lot of durability of effect even when drug concentrations are close to zero."
+
+---
+
+## Biomarker Rebound Timing → Concentration Threshold (from APGE/RP)
+
+### The Pattern
+
+**Map when biomarkers rebound in PK studies to the drug concentration at that timepoint. This establishes the Minimum Effective Concentration (MEC). If your regimen's Ctrough > MEC, efficacy should be maintained.**
+
+### Methodology
+
+```
+Step 1: Find MAD or long-term PK/PD study
+Step 2: Identify when biomarker suppression is lost (rebound)
+Step 3: Map timepoint to concentration curve
+Step 4: Read concentration at rebound timepoint = MEC
+Step 5: Compare your Ctrough to MEC
+```
+
+### Example: APGE (Zumilokibart) in Atopic Dermatitis
+
+**MAD Study Data:**
+- Dosing: 2 doses only (D1/D15 or D1/D29)
+- Biomarkers: pSTAT6, TARC
+- Observation: Near-complete suppression through Week 24
+- Rebound: pSTAT6 and TARC start rebounding at ~Week 36
+- Time since last dose at rebound: ~34 weeks
+
+**Concentration Mapping:**
+- Concentration at Week 36 (rebound point): ~10-15 µg/mL
+- This is the MEC for IL-13 pathway suppression
+
+**Application to Q6M Dosing:**
+| Parameter | Value | vs MEC |
+|-----------|-------|--------|
+| APGE Q6M Ctrough | 24.8 µg/mL | **1.7-2.5x above MEC** |
+| MEC (from MAD) | 10-15 µg/mL | Threshold |
+
+**Conclusion:** APGE Q6M maintains Ctrough well above the concentration where biomarker rebound occurs → should maintain pathway suppression → should maintain efficacy.
+
+### Visual Framework
+
+```
+Concentration
+    ^
+    |\                            MEC = concentration at rebound
+    | \                           
+    |  \      Q6M Ctrough         If Ctrough > MEC → efficacy maintained
+    |   \    ════════════         If Ctrough < MEC → biomarker rebound risk
+    |    \        
+    |     \   ─ ─ ─ MEC ─ ─ ─     
+    |      \  
+    |       \______ Rebound occurs here
+    |              
+    |________________________________> Time (weeks)
+              ↑
+         Week 36 (rebound)
+```
+
+### Key Questions
+
+1. **Is there MAD or long-duration PK/PD data available?**
+   - Look for single/limited dose studies with long follow-up
+   - Withdrawal studies also work
+
+2. **Which biomarker is most relevant?**
+   - Should be mechanistically linked to efficacy
+   - pSTAT6/TARC for IL-13; VEGF for anti-VEGF; etc.
+
+3. **Is the rebound clinically meaningful?**
+   - Statistical rebound ≠ clinical loss
+   - Check if rebound correlates with efficacy loss
+
+4. **What's the confidence in concentration mapping?**
+   - Sparse PK sampling = less precise
+   - Population PK models can help
+
+### Source: RP APGE Analysis (Jan 2025)
+
+> "In MAD dosing, rebound on pSTAT6 and TARC occurred close to 36 weeks which is around 34 weeks after last dose. This corresponds to a concentration of around 10-15 ug/mL which is lower than APGE Q6M Ctrough."
+
+---
+
+## AE Dose-Response Direction (from APGE/RP)
+
+### The Pattern
+
+**Check whether AE rates increase or decrease with higher exposure. The direction tells you whether the AE is exposure-driven (dose-dependent) or mechanism/idiosyncratic.**
+
+### Framework
+
+| AE Dose-Response | Interpretation | Higher Dose Implication |
+|------------------|----------------|------------------------|
+| **Monotonic (↑ dose → ↑ AE)** | Exposure-driven toxicity | Higher dose = more AE risk |
+| **Flat (↑ dose → same AE)** | Threshold effect or idiosyncratic | Higher dose unlikely to worsen |
+| **Inverted (↑ dose → ↓ AE)** | Not exposure-driven | Higher dose may actually be safer |
+
+### Example: Conjunctivitis with IL-13 Inhibitors
+
+**Ebglyss (Lebrikizumab) Data:**
+
+| Period | Q2W Rate | Q4W Rate | Direction |
+|--------|----------|----------|----------|
+| Induction (0-16 wks) | 10% | - | Baseline |
+| Maintenance (16-52 wks) | 1.8% | **10.1%** | **Inverted** |
+
+**Interpretation:** During maintenance, the *lower* exposure arm (Q4W) had *higher* conjunctivitis rate than the higher exposure arm (Q2W). This is inverted dose-response.
+
+**Conclusion:** Conjunctivitis is NOT exposure-driven. It's likely:
+- Mechanism-related (on-target effect of IL-13 inhibition)
+- Or idiosyncratic (patient-specific susceptibility)
+
+**Implication:** Extended dosing intervals (Q6M) won't reduce conjunctivitis risk, but also won't worsen it beyond what's already seen.
+
+### When to Check AE Dose-Response
+
+| Situation | Check AE Dose-Response? |
+|-----------|------------------------|
+| AE is key concern for drug class | Yes - determine if dose-related |
+| Evaluating higher dose / extended interval | Yes - predict AE trajectory |
+| AE appeared in one trial but not another | Yes - may be exposure difference |
+| Competitor had dose-limiting toxicity | Yes - understand mechanism |
+
+### Dupixent Confirmation
+
+> "Dupixent induction – 34 events per 100 patient years in induction to 12 events per 100 patient years through 260 weeks open label extension."
+
+Conjunctivitis is front-loaded (induction > maintenance) and shows inverted dose-response across IL-13 inhibitors. This is a class effect, not exposure-driven.
+
+### Source: RP APGE Analysis (Jan 2025)
+
+> "Again, showing an inverted dose response between Q2W and Q4W so I don't think AEs are related to drug exposure consistent with what the Dupixent exposure safety analysis suggests."
+
+---
+
 ## Key Takeaways
 
 1. **"Same drug, different efficacy" may be exposure, not biology**

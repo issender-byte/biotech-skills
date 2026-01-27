@@ -67,6 +67,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | AVTX HS Analysis | Jan 2026 | AVTX | HS competitive landscape, IL-1β framework, **MEDI8968 read-through, time-course analysis (RP)** |
 | LEGN CAR-T | Jan 2026 | LEGN | Site-of-care dynamics, partner portfolio, supply utilization |
 | **ACAD ADP Analysis (WS)** | Jan 2026 | ACAD | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, 2nd gen comparison framework, power table construction |
+| **APGE E-R Analysis (RP)** | Jan 2026 | APGE | Withdrawal floor, biomarker→MEC mapping, AE dose-response direction, placebo inflation risk, Ctrough ratio cross-molecule |
 
 ---
 
@@ -78,7 +79,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | 2 | CGON | reverend-bayes | Cross-trial benchmarking | cross-trial-comparison.md |
 | 3 | ALMS | graham | Price/volume decomposition, short thesis | short-thesis-validation.md |
 | 4 | TERN/ELVN | reverend-bayes | Endpoint manipulation, E-R | analytical-rules.md (Rules 5-8) |
-| 5 | APGE | reverend-bayes | Framework validation | pk-pd-exposure-response.md |
+| 5 | APGE | reverend-bayes | Withdrawal durability floor, biomarker→MEC threshold, AE dose-response direction, placebo inflation risk, Ctrough ratio cross-molecule | pk-pd-exposure-response.md, cross-trial-comparison.md |
 | 6 | RVMD | keynes | M&A playbook, short cover | m-and-a-playbook.md |
 | 7 | OCUL | biotech-coord | Street expects, baseline mapping | street-expects-integration.md |
 | 8 | GLUE | reverend-bayes | Novel target safety | novel-target-safety.md |
@@ -130,6 +131,11 @@ When user provides raw materials (emails, DD notes, management calls):
 | Consistent separation > end-of-study | Drug should separate early and maintain; end-only separation = red flag | AVTX (RP) | analytical-rules.md (38-42) | ✅ |
 | Error bar discipline | Wide CIs = high variability, low confidence; overlapping CIs = noise | AVTX (RP) | analytical-rules.md (41) | ✅ |
 | Positive control benchmarking | Compare kinetics to known winner in same indication (e.g., Bimzelx) | AVTX (RP) | analytical-rules.md (40) | ✅ |
+| Withdrawal durability floor | Mine competitor withdrawal studies; efficacy loss at zero exposure = floor | APGE (RP) | pk-pd-exposure-response.md | ✅ |
+| Biomarker rebound → MEC | Map biomarker rebound timing to concentration; establishes minimum effective conc | APGE (RP) | pk-pd-exposure-response.md | ✅ |
+| AE dose-response direction | Inverted dose-response = AE not exposure-driven; monotonic = exposure-driven | APGE (RP) | pk-pd-exposure-response.md | ✅ |
+| Placebo inflation risk | If placebo >50% higher than historical, use delta as primary metric | APGE (RP) | cross-trial-comparison.md | ✅ |
+| Ctrough ratio cross-molecule | If your Ctrough > competitor's at known efficacy interval, that's your floor | APGE (RP) | cross-trial-comparison.md | ✅ |
 
 ### john-snow Patterns (Commercial)
 
@@ -219,3 +225,4 @@ Files referenced in memory but not yet created:
 | 2026-01-27 | **ACAD (WS):** Added Work Evaluation Protocol to skill-iteration-guide.md. Extracted 5 new patterns: RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, 2nd gen comparison framework, FDA rejection despite stats. Updated randomized-withdrawal-design.md and pk-pd-exposure-response.md. Added WS to team-roster.md. 22 case studies. |
 | 2026-01-27 | **ACAD (AG/MM feedback):** Added 5 new patterns from senior feedback: "juice left to squeeze", cross-indication validation, non-linear scale caution, QTc dose ceiling, subpopulation power. Created scale-properties.md (NEW). Updated randomized-withdrawal-design.md (Frameworks 5-6), pk-pd-exposure-response.md (QTc section), team-roster.md (WS progress). 45 files. |
 | 2026-01-27 | **AVTX (RP feedback):** Added 6 new patterns from RP: MEDI8968 failure read-through, biomarker validates dosing, target engagement ≠ efficacy, time-course consistency, error bar discipline, positive control benchmarking. Updated ta-hidradenitis-suppurativa.md, analytical-rules.md (now 53 rules with new Time-Course section 38-42), team-roster.md (ZH development area #4). Created time-course-kinetics.md (NEW comprehensive reference). 46 files. |
+| 2026-01-27 | **APGE E-R Analysis (RP):** Added 5 new patterns from RP's E-R deep dive: withdrawal durability floor, biomarker→MEC threshold mapping, AE dose-response direction, placebo inflation risk, Ctrough ratio cross-molecule inference. Updated pk-pd-exposure-response.md (3 patterns), cross-trial-comparison.md (2 patterns as Part 6-7). 23 case studies. |

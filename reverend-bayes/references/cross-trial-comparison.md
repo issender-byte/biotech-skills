@@ -320,6 +320,208 @@ Space read-through risk: [High/Medium/Low]
 
 ---
 
+## Part 6: Placebo Response Inflation Risk (from APGE/RP)
+
+### The Pattern
+
+**When cross-trial placebo responses differ substantially (>50%), the delta vs placebo is the true comparison metric, not absolute response rates. High placebo response in early phases creates risk that later phases look worse when placebo normalizes.**
+
+### Why This Matters
+
+Absolute efficacy rates can be misleading if placebo response varies across trials. A drug showing 67% response looks great until you realize placebo was 25% (delta = 42%). The same drug in a trial with 12% placebo showing 55% response (delta = 43%) is actually equivalent or better.
+
+### Example: APGE vs Dupixent in Atopic Dermatitis
+
+| Parameter | APGE Phase 2a | Dupixent Phase 3 | Implication |
+|-----------|---------------|------------------|-------------|
+| Active EASI-75 | 66.9% | 49.5% | APGE looks much better |
+| **Placebo EASI-75** | **24.6%** | **12.7%** | APGE placebo 2x higher |
+| **Delta vs Placebo** | **+42.3%** | **+36.8%** | Only 6% better on delta |
+
+**The Insight:** APGE's apparent 17% superiority (67% vs 50%) shrinks to ~6% when adjusted for placebo. The elevated placebo response in APGE's trial inflates the apparent efficacy.
+
+### Risk Framework
+
+| Placebo Scenario | Risk Level | Implication |
+|------------------|------------|-------------|
+| Your placebo ≈ historical | Low | Absolute rates are comparable |
+| Your placebo 25-50% higher | Medium | Flag in analysis, adjust expectations |
+| **Your placebo >50% higher** | **High** | Delta is the only valid metric |
+| Your placebo lower than historical | Positive | Conservative estimate if you still beat |
+
+### Phase 2 → Phase 3 Placebo Normalization Risk
+
+Placebo response often decreases in larger, more rigorous Phase 3 trials:
+
+| Factor | Phase 2 | Phase 3 | Effect on Placebo |
+|--------|---------|---------|-------------------|
+| N size | Smaller | Larger | ↓ variance, ↓ placebo |
+| Site quality | Variable | More rigorous | ↓ placebo |
+| Patient selection | May be enriched | Broader | ↓ placebo |
+| Rater training | Variable | Standardized | ↓ placebo |
+| Geographic mix | May skew high | More balanced | ↓ placebo |
+
+**Risk:** If Phase 2 placebo was 25% and Phase 3 placebo normalizes to 12%, your Phase 3 absolute efficacy will drop even if the drug effect is identical.
+
+### Sensitivity Analysis Framework
+
+When evaluating drugs with elevated placebo response, build scenarios:
+
+```
+═══════════════════════════════════════════════════════════════
+PLACEBO SENSITIVITY ANALYSIS
+═══════════════════════════════════════════════════════════════
+
+Observed (Phase 2):
+- Active: 67%
+- Placebo: 25%
+- Delta: 42%
+
+Scenario 1: Placebo normalizes to 15%
+- If delta holds (42%): Active = 57%
+- Still beats Dupixent 50%? Yes (by 7%)
+
+Scenario 2: Placebo normalizes to 12% (Dupixent-like)
+- If delta holds (42%): Active = 54%
+- Still beats Dupixent 50%? Yes (by 4%)
+
+Scenario 3: Delta compresses to 35% + placebo 12%
+- Active = 47%
+- Below Dupixent = Negative
+
+Probability-weighted expectation:
+- P(Scenario 1) = 40% → 57% efficacy
+- P(Scenario 2) = 40% → 54% efficacy
+- P(Scenario 3) = 20% → 47% efficacy
+- Expected = 54% efficacy
+═══════════════════════════════════════════════════════════════
+```
+
+### Questions to Ask
+
+1. **What was the placebo response in your trial vs historical?**
+   - If >50% higher, use delta as primary metric
+
+2. **Why might placebo be elevated?**
+   - Geographic (ex-US sites often higher)
+   - Small n (variance)
+   - Enriched population
+   - Subjective endpoint (EASI, IGA)
+
+3. **What's the risk placebo normalizes in Phase 3?**
+   - Build sensitivity scenarios
+
+4. **Does the delta still beat the bar if placebo normalizes?**
+   - This is the key question
+
+### Source: RP APGE Analysis (Jan 2025)
+
+> "Across all Phase 2a populations, APGE patients had 66.9% achieving EASI-75 versus 24.6% of placebo (P < 0.001). The Dupixent placebo was only 12.7%. So the delta vs placebo is only about 6% better for APGE despite the much higher absolute EASI-75."
+
+---
+
+## Part 7: Ctrough Ratio Method for Cross-Molecule Inference (from APGE/RP)
+
+### The Pattern
+
+**When inferring efficacy across different molecules at different dosing intervals, compare Ctrough values. If your Ctrough exceeds a competitor's at an interval where their efficacy is known, use that efficacy as your floor.**
+
+### Why This Works
+
+For drugs targeting the same pathway (e.g., IL-13 inhibition), efficacy correlates with exposure. If Molecule A achieves 2x the trough concentration of Molecule B, and Molecule B's efficacy at that trough is known, Molecule A should achieve at least equivalent efficacy.
+
+### Methodology
+
+```
+Step 1: Identify competitor with known efficacy at specific dosing interval
+Step 2: Get Ctrough for competitor at that interval
+Step 3: Get Ctrough for your molecule at your proposed interval
+Step 4: Calculate ratio: Your Ctrough / Competitor Ctrough
+Step 5: If ratio ≥ 1, competitor efficacy is your floor
+Step 6: If ratio >> 1, you may exceed competitor efficacy
+```
+
+### Example: APGE Q6M vs Ebglyss Dosing Intervals
+
+**Ctrough Comparison:**
+
+| Molecule | Interval | Ctrough (µg/mL) | Efficacy (EASI-75) |
+|----------|----------|-----------------|--------------------|
+| Ebglyss | Q4W | 38.0 | 86% |
+| Ebglyss | Q8W | 12.3 | 79% |
+| **APGE** | **Q6M** | **24.8** | **?** |
+
+**Ratio Analysis:**
+
+| Comparison | Ratio | Implication |
+|------------|-------|-------------|
+| APGE Q6M vs Ebglyss Q8W | 24.8 / 12.3 = **2.0x** | APGE should beat Q8W floor (79%) |
+| APGE Q6M vs Ebglyss Q4W | 24.8 / 38.0 = **0.65x** | APGE below Q4W, but Q4W is ceiling |
+
+**Conclusion:** APGE Q6M Ctrough is 2x Ebglyss Q8W Ctrough. Since Ebglyss Q8W achieves 79% EASI-75, APGE Q6M should achieve at least 79% (and likely higher given 2x exposure).
+
+### Visual Framework
+
+```
+Ctrough (µg/mL)
+    ^
+40  |     ● Ebglyss Q4W (86% efficacy)
+    |
+30  |
+    |  ● APGE Q6M (? efficacy)     ← 2x Q8W, should beat Q8W floor
+25  |     
+    |
+20  |
+    |
+15  |     ● Ebglyss Q8W (79% efficacy)  ← Floor for APGE
+    |
+10  |
+    |________________________________> Dosing Interval
+         Q4W   Q6M   Q8W   Q12W  Q6M
+              (APGE)
+```
+
+### When to Use Ctrough Ratio Method
+
+| Situation | Use Ctrough Ratio? |
+|-----------|-------------------|
+| Same target (e.g., both IL-13 inhibitors) | Yes - direct comparison |
+| Same MOA, different potency | Yes - but adjust for potency |
+| Different targets, same pathway | Maybe - less direct |
+| Different MOA entirely | No - not comparable |
+| No E-R relationship established | Caution - ratio may not predict |
+
+### Key Assumptions & Limitations
+
+| Assumption | Validity Check |
+|------------|----------------|
+| E-R relationship is monotonic | Check competitor E-R data |
+| Ctrough is the binding PK parameter | Could be Cmax, AUC, or time above threshold |
+| Same indication, same endpoint | Required for direct comparison |
+| Potency is similar | If not, adjust for EC50 ratio |
+| No ceiling effect | If competitor plateaus, 2x Ctrough won't help |
+
+### Integration with Other E-R Frameworks
+
+Combine Ctrough ratio with:
+
+1. **Withdrawal floor** (Part 6 of pk-pd-exposure-response.md)
+   - Withdrawal shows efficacy at Ctrough ≈ 0
+   - Your Ctrough >> 0 should beat withdrawal floor
+
+2. **Biomarker rebound threshold**
+   - MEC from biomarker rebound
+   - Your Ctrough > MEC confirms pathway suppression
+
+3. **AE dose-response direction**
+   - If AE not exposure-driven, higher Ctrough won't worsen safety
+
+### Source: RP APGE Analysis (Jan 2025)
+
+> "APGE Q6M Ctrough is 24.8 µg/mL vs Ebglyss Q8W Ctrough of 12.3 µg/mL - a 2.0x ratio. Since Ebglyss Q8W achieves 79% EASI-75 (vs 86% for Q4W), I'd expect APGE Q6M to at least match the Q8W floor, which still beats Dupixent."
+
+---
+
 ## Key Takeaways
 
 1. **Set explicit bars** - "Need >93% to derisk" not "hope it's good"
