@@ -483,3 +483,235 @@ If building a bear case around AA pathway risk:
 5. **Beware "obvious" shorts** - If everyone sees it, it's probably priced in
 6. **Ask "what makes this wrong?"** - Best shorts survive contrarian challenge
 7. **Model AA pathway risk** - If competitor has full approval path ahead of your AA, discount accordingly
+
+
+---
+
+## Worked Example: ACAD ADP-204 (Why the Short Doesn't Work)
+
+### Background
+
+WS completed clinical analysis of ACAD's ADP-204 (Remlifansirin) for Alzheimer's Disease Psychosis:
+- Used cross-indication analysis (PDP vs ADP)
+- Identified placebo rebound anomaly (10-15% vs expected 50%)
+- Estimated effect size: 0.20 (vs company's 0.40 powered assumption)
+- Calculated PoS: 20-25%
+
+**WS's implicit conclusion:** "This is a short candidate - trial is underpowered and likely to fail."
+
+**What WS missed:** The graham step - does the market already agree?
+
+---
+
+### Step 1: Current Market Data (January 2026)
+
+| Metric | Value |
+|--------|-------|
+| Stock Price | $26.50 |
+| Market Cap | $4.50B |
+| Cash | $847M |
+| **Enterprise Value** | **$3.65B** |
+| 2025 Revenue | ~$1.07B |
+| EV/Revenue | 3.4x |
+
+---
+
+### Step 2: Base Business Valuation
+
+**NUPLAZID (Parkinson's Disease Psychosis):**
+- 2025 guidance: $685-695M
+- 2028 ambition: ~$1.0B
+- Patent protection: Composition to 2030, Formulation to 2038
+- LOE risk post-2030 for composition, but formulation extends to 2038
+- Valuation: Mature drug with visible decline trajectory post-2030
+
+**DAYBUE (Rett Syndrome):**
+- 2025 guidance: $385-400M
+- 2028 ambition: ~$700M
+- Orphan drug exclusivity, first-in-class
+- Discontinuation concerns (GI side effects ~25% attrition)
+- Valuation: Growing but terminal value capped by patient population
+
+**Base Business NPV Build-Up:**
+
+| Component | Bear Case | Base Case | Bull Case |
+|-----------|-----------|-----------|-----------|
+| NUPLAZID NPV | $1.8B | $2.2B | $2.8B |
+| DAYBUE NPV | $1.0B | $1.5B | $2.0B |
+| Net Cash | $0.85B | $0.85B | $0.85B |
+| **Total Base** | **$3.65B** | **$4.55B** | **$5.65B** |
+| **Per Share** | **$22** | **$27** | **$33** |
+
+**Key Finding:** Current EV ($3.65B) equals the BEAR CASE base business valuation.
+
+---
+
+### Step 3: Implied Pipeline Value
+
+```
+Implied Pipeline = Current EV - Base Business Value
+```
+
+| Scenario | Base Business Value | Implied Pipeline |
+|----------|--------------------:|------------------:|
+| Bear case | $3.65B | **$0** |
+| Base case | $4.55B | **-$0.9B** |
+| Bull case | $5.65B | **-$2.0B** |
+
+**Critical Finding:** Market gives **zero to negative** credit to pipeline.
+
+The stock is trading as if ADP-204 (and all other pipeline) will fail.
+
+---
+
+### Step 4: ADP-204 Success Case NPV
+
+**If ADP-204 works:**
+
+| Parameter | Estimate | Source |
+|-----------|----------|--------|
+| Peak sales (ADP + LBDP combined) | $2.5-3.0B | Company "illustrative" $4B, discounted for competition |
+| ADP alone | $1.5-2.0B | ~50% of combined |
+| Operating margin | 35-40% | CNS specialty model |
+| Peak operating profit | $600-800M | |
+| Terminal multiple | 8-10x | Pharma standard |
+| **NPV at launch (2029)** | **$5-8B** | |
+| **Discounted to today** | **$4.0-6.0B** | 3 years @ 10% |
+
+Using midpoint: **ADP success case NPV = $5.0B**
+
+---
+
+### Step 5: Back-Solve Implied PoS
+
+```
+Implied PoS = Implied Pipeline Value / Success NPV
+```
+
+| Scenario | Implied Pipeline | Success NPV | **Implied PoS** |
+|----------|------------------:|------------:|----------------:|
+| Market @ bear base | $0 | $5.0B | **0%** |
+| Market @ base base | -$0.9B | $5.0B | **<0%** |
+| Generous (assume some pipeline credit) | $0.5B | $5.0B | **10%** |
+
+---
+
+### Step 6: Compare to WS's Estimate
+
+| Source | ADP PoS Estimate |
+|--------|------------------|
+| **Market Implied** | **0-10%** |
+| **WS Estimate** | **20-25%** |
+| Street Consensus | 30-40% |
+| Company Implied | 50-60%+ |
+
+**WS's PoS (20-25%) is ABOVE market implied (0-10%).**
+
+---
+
+### Why the Short Doesn't Work
+
+**The Logic:**
+1. WS is bearish on ADP-204 (PoS 20-25%)
+2. But market is MORE bearish (PoS 0-10%)
+3. If WS is right, stock is fairly valued to cheap
+4. If company is right, stock is significantly undervalued
+5. Only if PoS is truly <10% (lower than WS thinks) is stock fairly valued
+
+**The Edge WS Thought He Had:**
+> "ADP-204 is underpowered, trial likely fails, short the stock"
+
+**Reality:**
+> Market already agrees (or is more bearish). No edge.
+
+**When This Short WOULD Work:**
+- If WS's PoS < market implied PoS
+- Example: WS thinks PoS = 10%, market implies PoS = 40%
+- Then WS has negative edge and short makes sense
+
+---
+
+### The Pattern: "Bearish ≠ Short"
+
+| Scenario | Your PoS | Market Implied | Action |
+|----------|----------|----------------|--------|
+| Your PoS > Market | 40% | 20% | **LONG** |
+| Your PoS ≈ Market | 30% | 25% | **HOLD** |
+| Your PoS < Market | 20% | 40% | **SHORT** |
+| **Your PoS > Market (even if low)** | **20%** | **10%** | **NOT A SHORT** |
+
+**WS was in the last row.** His clinical analysis was good, but he never completed the valuation loop.
+
+---
+
+### Checklist: Before Recommending a Pipeline Short
+
+- [ ] **Value base business conservatively** - What's the floor?
+- [ ] **Calculate implied pipeline value** - EV minus base business
+- [ ] **Back-solve implied PoS** - What failure rate is priced in?
+- [ ] **Compare your PoS to market implied** - Is your PoS BELOW market?
+- [ ] **If your PoS > market implied** - NOT a short (market already agrees)
+- [ ] **Only short if your PoS < market implied** - You see MORE risk than market
+
+**WS skipped steps 2-5.** Good clinical work doesn't automatically translate to good investment thesis.
+
+---
+
+### Integration: Complete the Chain
+
+```
+reverend-bayes: ES estimate → Power → PoS (WS did this well)
+      ↓
+john-snow: Peak sales estimate → Success case NPV
+      ↓
+graham: PoS → rNPV → implied PoS → YOUR PoS vs MARKET
+      ↓
+Decision: LONG if your PoS > market
+          SHORT only if your PoS < market
+          NO EDGE if your PoS ≈ market
+```
+
+**The edge comes from the GAP, not from absolute PoS level.**
+
+A 20% PoS stock can be a buy if market implies 10%.
+A 60% PoS stock can be a short if market implies 80%.
+
+---
+
+### ACAD Recommendation Summary
+
+```
+═══════════════════════════════════════════════════════════════
+SHORT THESIS VALIDATION: ACAD ADP-204
+═══════════════════════════════════════════════════════════════
+
+CLINICAL ASSESSMENT (reverend-bayes):
+- WS's PoS: 20-25%
+- Methodology: Cross-indication analysis, placebo rebound, E-R ceiling
+- Quality: Good clinical work
+
+VALUATION ASSESSMENT (graham):
+- Base business value: $3.65-4.55B
+- Implied pipeline value: $0 to negative
+- Market implied PoS: 0-10%
+- WS's PoS vs Market: 20% vs 10% → WS is MORE BULLISH
+
+CATALYST ASYMMETRY:
+| Scenario | Prob (WS) | Stock Move | EV |
+|----------|-----------|------------|-----|
+| ADP hits | 20-25% | +50-100% | +$1-2B |
+| ADP fails | 75-80% | -10-20% | -$0.5B |
+| **Weighted EV** | | | **Positive** |
+
+RECOMMENDATION: NOT A SHORT
+- Market already prices in failure
+- Weighted EV is positive even at WS's low PoS
+- If WS is wrong and trial works, massive upside
+
+What would make this a short:
+- Stock rallies 50%+ before data
+- Market re-rates to 40-50% implied PoS
+- THEN WS's 20% view would be below market
+
+═══════════════════════════════════════════════════════════════
+```

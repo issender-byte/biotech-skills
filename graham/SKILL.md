@@ -254,12 +254,32 @@ KEY RISKS:
 ═══════════════════════════════════════════════════════════════
 ```
 
+## Critical Pattern: "Bearish ≠ Short"
+
+**→ See `references/short-thesis-validation.md` ACAD worked example**
+
+The edge comes from the GAP between your PoS and market implied PoS, not from absolute PoS level.
+
+| Scenario | Your PoS | Market Implied | Action |
+|----------|----------|----------------|--------|
+| Your PoS > Market | 40% | 20% | **LONG** |
+| Your PoS ≈ Market | 30% | 25% | **HOLD** |
+| Your PoS < Market | 20% | 40% | **SHORT** |
+| **Your PoS > Market (even if low)** | **20%** | **10%** | **NOT A SHORT** |
+
+**Before recommending a short on pipeline skepticism:**
+1. Value the base business conservatively
+2. Calculate implied pipeline value (EV - base)
+3. Back-solve implied PoS from success case NPV
+4. Compare your PoS to market implied
+5. **If market implied PoS < your estimate → NOT a short, possibly a long**
+
 ## Reference Files
 
 | File | Use When |
 |------|----------|
 | `references/rnpv-methodology.md` | Detailed NPV calculations |
-| `references/short-thesis-validation.md` | Validating short positions |
+| `references/short-thesis-validation.md` | Validating short positions, **ACAD worked example ("Bearish ≠ Short")** |
 
 **Planned (not yet created):**
 - `references/comparable-transactions.md` - M&A comp frameworks

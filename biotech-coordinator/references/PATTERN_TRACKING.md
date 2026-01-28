@@ -237,6 +237,7 @@ Files referenced in memory but not yet created:
 | 2026-01-27 | **AVTX IC50 (ZH):** Added Exposure/IC50 Ratio Comparison pattern to pk-pd-exposure-response.md. Pattern: normalize cross-molecule comparisons to Ctrough/IC50; receptor blockers vs ligand neutralizers require different calculations; Anakinra paradox. Updated team-roster.md with ZH progress.
 | 2026-01-28 | **ACAD WS Round 2:** Evaluated WS response to AG/MM. Good engagement - did cross-indication validation (PDP vs ADP), identified placebo rebound anomaly (10-15%), defended view with data. Gaps: no power calc from ES estimate, no implied PoS, deferred dose-response question. Added management call questions to Action Items. Updated team-roster.md. |
 | 2026-01-28 | **Effect Size Gap Framework:** Added Framework 3 to statistical-framework.md. Template for: back-solve trial N from powered ES → calculate power at analyst ES → translate to endpoint units → PoS with regulatory haircut → market comparison. ACAD worked example included. Completes reverend-bayes→graham→keynes→simons chain. |
+| 2026-01-28 | **ACAD Graham Analysis (Worked Example):** Completed WS's missing step. Stock at $26.50, EV $3.65B. Base business (NUPLAZID + DAYBUE) = $3.65-4.55B. Implied pipeline = $0 to negative. Market implied PoS = 0-10% vs WS's 20-25%. **Finding: NOT A SHORT** - market already prices in failure. Added full worked example to short-thesis-validation.md with pattern: "Bearish ≠ Short" - edge comes from gap between your PoS and market implied, not absolute PoS level. |
 
 ---
 
