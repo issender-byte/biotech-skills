@@ -65,6 +65,23 @@ Key components:
 | 15-20% | Very high; significant bearish bet | High squeeze risk |
 | >20% | Extreme; crowded short | Binary setup |
 
+### Float Concentration Amplifies Squeeze Risk
+
+**Pattern (from IBRX):** When insiders own large blocks, TRUE float is much smaller than stated float. Calculate SI as % of true float, not stated float.
+
+| Scenario | Stated Float | Insider Ownership | True Float | Stated SI | True SI |
+|----------|-------------|-------------------|------------|-----------|--------|
+| IBRX | 330M shares | 67% (PSS) | 109M shares | 35% | ~106% |
+| Normal | 100M shares | 15% | 85M shares | 15% | 18% |
+
+**Rule:** When insider/strategic ownership >40%, recalculate SI as % of tradeable shares. SI >50% of true float = extreme squeeze risk.
+
+**Warning signs:**
+- Founder CEO with majority control
+- Strategic investor with lock-up expired
+- Family office/billionaire with illiquid position
+- Cross-holdings between related companies
+
 ### Days to Cover
 
 Days to Cover = Short Interest / Average Daily Volume

@@ -328,3 +328,4 @@ CONCLUSION:
 5. **Sellside can be mechanically wrong** - exploit their static assumptions
 6. **Connect intraquarter to peak** - script slope informs long-term trajectory
 7. **Ask what street is focused on** - beat/miss on the wrong metric doesn't move stock
+8. **Validate capture rate consistency before modeling** (from IBRX) - if capture holds steady across quarters (e.g., 102% for IBRX across 3Q25/4Q25), scripts are "signal not noise" and extrapolation is reliable

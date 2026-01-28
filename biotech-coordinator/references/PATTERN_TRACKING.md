@@ -70,6 +70,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | **APGE E-R Analysis (RP)** | Jan 2026 | APGE | Withdrawal floor, biomarker→MEC mapping, AE dose-response direction, placebo inflation risk, Ctrough ratio cross-molecule |
 | **CGON PIVOT-006 (LA)** | Jan 2026 | CGON | US periop chemo adoption reality, trial design signals, management Q&A gap-filling, FDA control precedent, cross-trial efficacy hierarchy |
 | **OCUL Internal Debate** | Jan 7, 2026 | OCUL, EYPT, KOD | Rescue paradox, baseline severity confound, maintenance vs induction potency, KOD failure read-through, drug delivery uncertainty |
+| **IBRX Short Pitch (CV)** | Jan 28, 2026 | IBRX, CGON, JNJ | Float concentration squeeze risk, J-code transition timing, PE practice consolidation, script capture validation, BCG dependency |
 
 ---
 
@@ -100,6 +101,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | 21 | LEGN | john-snow | CAR-T commercial, site-of-care, supply utilization | cell-therapy-commercial.md |
 | 22 | ACAD | reverend-bayes | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, power tables, "juice left to squeeze", cross-indication validation, NPIC non-linearity, QTc dose headroom | randomized-withdrawal-design.md, pk-pd-exposure-response.md, scale-properties.md |
 | 23 | OCUL | reverend-bayes, john-snow | Rescue paradox (MM), baseline severity confound (MZ), maintenance vs induction potency (RP), KOD failure read-through, drug delivery uncertainty | ta-ophthalmology.md, ta-ophthalmology-commercial.md |
+| 24 | IBRX | john-snow, keynes | Float concentration squeeze risk, J-code transition timing, PE practice consolidation, script capture validation, BCG dependency, WIC competitive displacement | positioning-analysis.md, pricing-access.md |
 
 ---
 
@@ -166,6 +168,10 @@ When user provides raw materials (emails, DD notes, management calls):
 | Molecule ownership history | Multiple ownership changes = prior owners saw limited value | AVTX | (to add) | ⏳ |
 | SSE vs DSE biosimilar dynamics | Switching vs de novo erosion; DSE unlikely in severe disease | AVTX | (to add) | ⏳ |
 | Clinical bar definition | Commercial must define efficacy thresholds for each scenario | AVTX | SKILL.md (handoff section) | ✅ |
+| J-code transition timing | Temp→permanent J-code at 6-9 mo post-approval; inflection in community adoption | IBRX (CV) | pricing-access.md | ✅ |
+| PE practice consolidation | Protocol committees replace individual physician preference; WIC drugs deprioritized | IBRX (CV) | pricing-access.md | ✅ |
+| Script capture rate validation | Verify capture rate stability before extrapolating; 102%+ = reliable signal | IBRX (CV) | intraquarter-commercial-tracking.md | ✅ |
+| BCG dependency disadvantage | Drugs requiring scarce/unpleasant SOC inherit SOC limitations | IBRX (CV) | (to add) | ⏳ |
 
 ### graham Patterns (Valuation)
 
@@ -186,6 +192,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | Insider activity | Cluster buying = strong signal | APGE | insider-activity.md | ✅ |
 | Catalyst positioning | Pre-event run, EV analysis | Core | catalyst-playbook.md | ✅ |
 | Technical basics | Support/resistance, volume | Core | technical-basics.md | ✅ |
+| Float concentration squeeze | TRUE float = stated float - insider blocks; recalculate SI% accordingly | IBRX (CV) | positioning-analysis.md | ✅ |
 
 ### simons Patterns (Portfolio/Risk)
 
@@ -248,6 +255,7 @@ Files referenced in memory but not yet created:
 | 2026-01-28 | **Effect Size Gap Framework:** Added Framework 3 to statistical-framework.md. Template for: back-solve trial N from powered ES → calculate power at analyst ES → translate to endpoint units → PoS with regulatory haircut → market comparison. ACAD worked example included. Completes reverend-bayes→graham→keynes→simons chain. |
 | 2026-01-28 | **ACAD Graham Analysis (Worked Example):** Completed WS's missing step. Stock at $26.50, EV $3.65B. Base business (NUPLAZID + DAYBUE) = $3.65-4.55B. Implied pipeline = $0 to negative. Market implied PoS = 0-10% vs WS's 20-25%. **Finding: NOT A SHORT** - market already prices in failure. Added full worked example to short-thesis-validation.md with pattern: "Bearish ≠ Short" - edge comes from gap between your PoS and market implied, not absolute PoS level. |
 | 2026-01-28 | **OCUL Internal Debate (Jan 7, 2026):** Extracted 7 new patterns from ZH/RP/MM/MZ debate. Created ta-ophthalmology.md (NEW) with: Rescue paradox (MM's key insight), baseline severity confound (MZ), maintenance vs induction potency (RP), KOD failure read-through (MZ), drug delivery uncertainty (MM). Created ta-ophthalmology-commercial.md (NEW) with durability positioning framework. 49 files, 23 case studies. |
+| 2026-01-28 | **IBRX Short Pitch (CV):** Evaluated CV's first 5PTer. Strong commercial work: script tracking methodology, KOL channel checks with attribution, squeeze risk identification (Keynes-style). Gaps: no clinical PoS for catalysts, no implied PoS back-solve. Extracted 5 patterns: float concentration squeeze, J-code transition timing, PE practice consolidation, script capture validation, BCG dependency. Updated positioning-analysis.md, pricing-access.md. Added CV to team-roster.md. 24 case studies. |
 
 ---
 

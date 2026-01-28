@@ -68,3 +68,48 @@ From ALMS exchange:
 - BMS pushing volume via patient connect
 - Suggests pricing pressure will continue
 - Third-to-market (ESK-001) will face same or worse dynamics
+
+---
+
+## J-Code Transition Timing (from IBRX)
+
+**Pattern:** New physician-administered drugs launch under temporary J-codes (miscellaneous). Permanent J-code typically issued 6-9 months post-approval.
+
+| Phase | Timeline | Reimbursement Dynamic |
+|-------|----------|----------------------|
+| Launch | Day 1 | Temp J-code; reimbursement uncertain |
+| Transition | 6-9 months | Permanent J-code issued |
+| Stable | 9+ months | Predictable reimbursement |
+
+**Commercial implications:**
+- Community physicians hesitant to prescribe until permanent J-code
+- Hospital outpatient may adopt faster (different reimbursement mechanics)
+- **Modeling:** Expect launch curve inflection at permanent J-code milestone
+
+**IBRX/Inlexzo example:** Approved 9/9/25, temp J-code → permanent expected March-June 2026. This predictable timeline creates catalyst for competitive displacement.
+
+---
+
+## PE-Backed Practice Consolidation (from IBRX)
+
+**Pattern:** Private equity consolidation of specialty practices shifts prescribing authority from individual physician preference to practice-level protocol.
+
+| Traditional Model | PE-Consolidated Model |
+|-------------------|----------------------|
+| Individual physician choice | Protocol committee decision |
+| Relationship-driven | Economics-driven |
+| Product-by-product evaluation | Systematic formulary |
+| Gradual switching | Protocol-mandated switching |
+
+**Commercial implications:**
+- "WIC" (worst-in-class) drugs get systematically deprioritized
+- "BIC economics" (best reimbursement profile) gains share
+- Navigation teams funnel patients to preferred agents
+- Individual KOL relationships less valuable
+
+**IBRX example:** Solaris Health establishing "NMIBC navigation teams" → agent selection becomes practice protocol, not physician preference. IBRX ("WIC" per KOLs) faces deprioritization risk.
+
+**Modeling:** For specialty markets with PE consolidation (urology, dermatology, ophthalmology), assume share shifts favor:
+1. Best economics (reimbursement margin)
+2. Best storage/logistics (convenience)
+3. Best efficacy (only if economics comparable)

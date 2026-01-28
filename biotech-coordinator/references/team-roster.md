@@ -48,6 +48,7 @@ Reference file for team member roles, strengths, development areas, and coaching
 | BS | Analyst | reverend-bayes | TBD | TBD |
 | WS | Biostatistician | reverend-bayes | Power analysis, E-R, cross-trial comparison | Implied PoS back-solve, thesis resolution |
 | RP | Analyst | reverend-bayes | Prior failure search, biomarker validation, kinetics | TBD |
+| CV | Junior Analyst | john-snow, keynes | Script tracking, KOL channel checks, squeeze risk | Clinical bar definition, implied PoS |
 
 ---
 
@@ -203,6 +204,49 @@ Reference file for team member roles, strengths, development areas, and coaching
 |------|-------------|--------|
 | 2026-01-26 | AVTX: Contributed NLRP3 read-through with citations | Noted |
 | | | |
+
+---
+
+### CV (Cia Varelas) - Junior Analyst (Commercial)
+
+**Primary Skills:** john-snow, keynes
+
+**Role:** Commercial analysis with emphasis on script tracking, KOL channel checks, and positioning/squeeze risk. Most junior team member.
+
+**Strengths:**
+- **Leads with actionable recommendation** - "SS 25 bps above $2.50" with specific price level and sizing. Doesn't bury conclusions.
+- **Script tracking methodology** - Builds PSFs/wk → consensus waterfall with capture rate validation (102% across 3Q25/4Q25).
+- **KOL channel checks with attribution** - Named physicians, direct quotes, forced rankings. Primary research, not desk work.
+- **Squeeze risk identification** - Correctly identifies SI/float dynamics, insider ownership impact, and catalyst triggers. Shows Keynes-style thinking about "how we lose money even if thesis is correct."
+- **Competitive displacement framework** - Connects PE practice consolidation → protocol-driven prescribing → systematic deprioritization.
+- **Provenance discipline** - All major claims sourced with links.
+
+**Development Areas:**
+1. **Clinical PoS quantification** - Lists indication expansion catalysts but says "low probability" without numbers. Needs to provide PoS estimate for each catalyst.
+2. **Implied PoS back-solve** - Doesn't calculate what stock implies for expansion. Can't assess if short is fighting consensus or confirming it.
+3. **"What makes me wrong" section** - Identifies squeeze risk but doesn't quantify pain scenarios (how bad can this get?).
+4. **Thin consensus flag resolution** - Notes only 3 brokers but doesn't address what sellside bull case looks like.
+
+**Coaching Approach:**
+- Acknowledge strong commercial work first
+- Push for clinical PoS estimates (even if outside primary lane)
+- Require quantification of adverse scenarios for shorts
+- Ask "What does the stock assume?" on every thesis
+
+**Coaching Script (Post-IBRX):**
+> "CV, this is strong commercial work - the script tracking, KOL checks, and squeeze risk section are exactly what we need. Three things would sharpen it: First, quantify the indication expansion PoS. You said 'low probability' but the 1L NMIBC interim (85% vs 57%) isn't nothing - give me a number for each catalyst. Second, define what makes you wrong. If BCG shortage resolves or 1L captures the market, how bad does the squeeze get? Third, back-solve the implied PoS. What does the stock assume for expansion? That tells us if we're fighting consensus or confirming it."
+
+**Key Analytical Contributions:**
+1. Float concentration squeeze risk - TRUE float calculation when insiders own large blocks
+2. J-code transition timing - Predictable reimbursement catalyst at 6-9 months post-approval
+3. PE practice consolidation impact - Protocol-driven prescribing displaces WIC drugs
+4. Script capture rate validation - 102% capture instills confidence in extrapolation
+5. BCG dependency as competitive disadvantage - Inheriting scarce SOC limitations
+
+**Progress Tracking:**
+| Date | Observation | Status |
+|------|-------------|--------|
+| 2026-01-28 | IBRX pitch: Strong commercial work with actionable rec. Good KOL checks, squeeze risk section (Keynes). Gaps: no clinical PoS for catalysts, no implied PoS back-solve, no quantified adverse scenario. | Coaching to deliver |
 
 ---
 
