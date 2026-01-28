@@ -293,6 +293,122 @@ IMPLICATIONS:
 
 ---
 
+## Exposure/IC50 Ratio Comparison (from AVTX/ZH)
+
+### The Pattern
+
+**When comparing drugs targeting the same pathway, normalize to Ctrough/IC50 (or AUC/IC50). Raw dose or IC50 alone is misleading.**
+
+### Why This Matters
+
+Different drugs have:
+- Different potencies (IC50 values)
+- Different PKs (half-life, clearance, volume of distribution)
+- Different dosing regimens (frequency, route)
+
+Two drugs at "equivalent" doses can have vastly different target coverage at trough.
+
+### Framework
+
+| Parameter | How to Use |
+|-----------|------------|
+| IC50 (in vitro) | Potency benchmark - lower = more potent |
+| Ctrough (steady-state) | Lowest exposure between doses |
+| **Ctrough/IC50 ratio** | **Target coverage at trough - higher = better coverage** |
+| AUC/IC50 ratio | Total exposure-adjusted coverage |
+
+### Calculation
+
+```
+Target Coverage = Ctrough (nM) / IC50 (nM)
+
+If Ctrough = 100 nM and IC50 = 10 nM → Coverage = 10x
+If Ctrough = 50 nM and IC50 = 50 nM → Coverage = 1x
+
+General rule: Coverage >10x = likely saturating target
+             Coverage 1-10x = partial coverage
+             Coverage <1x = likely underdosed
+```
+
+### Example: IL-1 Inhibitors in HS (ZH Analysis)
+
+| Drug | IL-1β IC50 (pM) | Half-life | Dosing | Efficacy |
+|------|-----------------|-----------|--------|----------|
+| Anakinra | ~nM | 4-6h | 100mg SC QD | Yes (n=10/arm) |
+| Canakinumab | 0.2-1 nM | ~26 days | 150mg q4-8w | Y/N (case reports) |
+| Lutikizumab | 21 pM | 10-14 days | 100-300mg q1-2w | Yes (n=40/arm) |
+| MAS825 | 20-25 pM | 18-22 days | 300mg q2w→q4w | Marginal |
+| LY2189102 | 2.8 pM | ~20 days | 150-600mg q2-4w | TBD |
+
+**Gap in ZH's analysis:** Table shows IC50 and dosing but NOT Ctrough. Without Ctrough, can't calculate coverage ratio.
+
+### Cross-Molecule Comparison Checklist
+
+```
+BEFORE CLAIMING DRUG A > DRUG B IN SAME PATHWAY:
+
+□ Source IC50 from same assay system? (cell-based vs biochemical)
+□ Report Ctrough (not just dose) for both?
+□ Calculate Ctrough/IC50 for both?
+□ If receptor blocker vs ligand neutralizer, different calculation required
+□ Does dose-response data exist for the lead comparator?
+□ Account for target form (free ligand vs receptor occupancy)
+```
+
+### Receptor Blocker vs Ligand Neutralizer Caveat
+
+**IC50 is not directly comparable across these classes.**
+
+| Drug Type | What IC50 Measures | Target |
+|-----------|-------------------|--------|
+| Ligand neutralizer (Ab) | Free ligand binding | Capture circulating ligand |
+| Receptor blocker (small molecule or Ab) | Receptor occupancy | Block receptor activation |
+
+For receptor blockers, need **receptor occupancy (RO)** calculation, not simple IC50 comparison:
+
+```
+RO (%) = [Drug] / ([Drug] + Kd) × 100
+
+Where Kd = receptor binding constant (often ≠ IC50)
+```
+
+**Example (MEDI8968 vs Luti in HS):**
+- MEDI8968 = IL-1R blocker (blocks ALL IL-1 signaling through IL-1R1)
+- Lutikizumab = dual IL-1α/β neutralizer (captures free ligands)
+
+Comparing IC50 values is apples-to-oranges. MEDI8968's IC50 measures receptor binding; Luti's IC50 measures ligand neutralization. Need RO calculation for MEDI8968.
+
+### The Anakinra Paradox
+
+Anakinra shows efficacy despite:
+- Short half-life (4-6h) requiring daily dosing
+- nM IC50 (weaker than pM antibodies)
+
+Possible explanations:
+1. **Small n** - n=10/arm may be noise
+2. **Peak effect matters** - Some targets require high Cmax, not sustained Ctrough
+3. **IL-1Ra mechanism** - Receptor antagonist vs neutralizing antibody (different kinetics)
+4. **Rapid onset** - Anakinra effect in hours; long t½ Abs take weeks
+
+**Lesson:** Trough/IC50 ratio isn't the only metric. Cmax, time-to-effect, and mechanism can matter.
+
+### Integration with PoS Assessment
+
+| Scenario | Ctrough/IC50 | PoS Adjustment |
+|----------|--------------|----------------|
+| Your drug >> competitor at known efficacy | Positive | Your floor is established |
+| Your drug << competitor with marginal efficacy | Negative | May be underdosed |
+| Your drug ≈ failed competitor | Negative | Same exposure, same outcome likely |
+| Your drug >> failed competitor | Neutral | Underdosing may explain failure |
+
+### Source: ZH AVTX Analysis (Jan 2025)
+
+> "On an exposure to IC50 fold basis, MAS825 is underdosed (it is similar to 100 mg EW Luti, which didn't show efficacy in HS)."
+
+**Critique:** Claim is directionally plausible but missing actual Ctrough data to prove it.
+
+---
+
 ## E-R Plateau Skepticism (from ACAD)
 
 ### The "Just Dose Higher" Thesis Problem
