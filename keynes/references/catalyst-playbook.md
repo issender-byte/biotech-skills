@@ -269,6 +269,135 @@ _________________________________
 
 ---
 
+---
+
+## Competitor-as-Catalyst Framework
+
+### The Pattern
+
+**When your stock is levered to a competitor's readout, the competitor event IS your catalyst.**
+
+This is distinct from normal catalyst analysis. You're not betting on your company's execution — you're betting on whether a competitor's trial validates the mechanism/pathway.
+
+### When This Applies
+
+| Situation | Competitor-Contingent? |
+|-----------|------------------------|
+| Your Ph2 company, competitor has Ph3 same target | **Yes** — competitor Ph3 is THE catalyst |
+| Both at Ph3, competitor reads first | **Yes** — competitor sets market expectations |
+| Different mechanisms, same indication | **No** — standard competitive analysis |
+| Your drug approved, competitor launching | **No** — commercial dynamics, not binary |
+| Competitor failed, you're next best | **Maybe** — depends on mechanism read-through |
+
+### Framework
+
+```
+COMPETITOR-CONTINGENT POSITION ANALYSIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Your stock: [Ticker]
+Competitor event: [Company/Drug/Trial] | [Date]
+
+1. READ-THROUGH LOGIC
+   Same target? [Y/N]
+   Same MOA? [Y/N]
+   Same indication? [Y/N]
+   Similar Ph2 data? [Y/N - detail]
+   
+2. IF COMPETITOR SUCCEEDS
+   Your stock move: +[X]%
+   Thesis: [Validates mechanism, derisks your Ph3, etc.]
+   
+3. IF COMPETITOR FAILS
+   Your stock move: -[Y]%
+   Thesis: [Mechanism dead, your stock goes to cash, etc.]
+   
+4. COMPETITOR PoS (your assessment): [Z]%
+   Market implied PoS: [W]%
+   Edge: [Z - W]%
+
+5. EXPECTED VALUE
+   EV = (Z% × +X) + ((100-Z)% × -Y)
+   EV = [Result]%
+
+CRITICAL: Position in YOUR stock is a bet on COMPETITOR's trial
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Worked Example: DYN Levered to RNA
+
+From MM's DYN analysis:
+
+```
+Your stock: DYN ($18)
+Competitor event: RNA Ph3 DM1 pivotal | 2H26
+
+1. READ-THROUGH LOGIC
+   Same target? Yes - both TfR1-conjugated
+   Same MOA? Yes - DMPK knockdown
+   Same indication? Yes - DM1
+   Similar Ph2 data? Yes - "generally similar enough vHOT data"
+   
+2. IF RNA SUCCEEDS (hits stats, >=2sec vHOT delta at 6m)
+   DYN move: +40-50% (PT moves to mid-$20s)
+   Thesis: "Validates TfR1 DMPK approach, raises DYN Ph3 PoS to 50/50"
+   
+3. IF RNA FAILS (safety or efficacy)
+   DYN move: -50% (goes to cash ~$9-10)
+   Thesis: "Investors likely assume DYN fails too"
+   
+4. RNA PoS: "Very highly powered" (~80%? - MM didn't quantify)
+   Market implied: ? (not back-solved)
+   
+5. EXPECTED VALUE
+   If P(RNA hit) = 80%:
+   EV = (80% × +45%) + (20% × -50%) = +36% - 10% = +26%
+   
+   Favorable for long at 150bps
+```
+
+### Position Sizing for Competitor-Contingent Positions
+
+| Scenario | Recommended Size |
+|----------|------------------|
+| High conviction on competitor, cheap entry | 150-200 bps |
+| Moderate conviction, fair entry | 100-150 bps |
+| High conviction but expensive after run | 75-100 bps |
+| Low conviction or can't quantify competitor PoS | 50 bps or wait |
+| Near-term competitor catalysts unresolved | Start small, add post-resolution |
+
+**MM's approach:** "150bps pozn size seems about right here, and would add more in the teens once the SRPT/PEPG catalysts are behind us."
+
+### Catalyst Calendar for Competitor-Contingent
+
+When your stock depends on competitor events, build a comprehensive timeline:
+
+| Timing | Event | Impact on Your Stock |
+|--------|-------|----------------------|
+| [Date] | [Competitor 1 event] | [+/-X% if pos/neg] |
+| [Date] | [Competitor 2 event] | [+/-X% if pos/neg] |
+| [Date] | [Your company event] | [Direct catalyst] |
+
+**MM's DYN timeline included 12+ events through 2028** — this is the level of detail needed.
+
+### Red Flags in Competitor-Contingent Analysis
+
+| Red Flag | Why It Matters |
+|----------|----------------|
+| "Similar enough data" without quantification | Need actual Ph2 comparison |
+| Competitor PoS unstated | Can't calculate EV |
+| No downside scenario | May be blindsided |
+| Ignoring near-term competitor catalysts | SRPT/PEPG could change setup |
+| Assuming mechanism validation is automatic | May need to pass specific bar |
+
+### Integration with Clinical Bar for Read-Through
+
+See `reverend-bayes/references/read-through-analysis.md` for how to:
+- Define what competitor "success" means for your thesis
+- Set specific clinical thresholds (not just "hits stats")
+- Quantify the read-through probability
+
+---
+
 ## Key Principles
 
 1. **Respect the run** — 30%+ pre-event run means success is priced
@@ -277,3 +406,4 @@ _________________________________
 4. **Watch the fade** — Post-data fade often means more downside
 5. **Analyst upgrades lag** — Price often moves before ratings
 6. **Options tell truth** — Implied move is market's view
+7. **Know your catalyst owner** — If levered to competitor, competitor event is YOUR catalyst

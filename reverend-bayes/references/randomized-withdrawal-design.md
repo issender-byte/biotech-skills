@@ -537,3 +537,71 @@ When building power tables for RW trials, use SD from the appropriate phase:
 - P(approval | hit stats) - Will FDA approve even if we hit?
 
 In weak efficacy scenarios, P(approval | hit stats) < 100%.
+
+
+---
+
+## Framework 10: Placebo Rebound Magnitude as Efficacy Signal
+
+### Core Insight (from WS on ACAD)
+
+**In RW studies, the *degree* of placebo rebound after drug withdrawal indicates the true drug effect vs placebo contribution in the OL phase.**
+
+> "Hard for me to believe that you only lose 10% of efficacy after discontinuing drug for 18 wks (vs 12wks on treatment), if the drug is truly very effective."
+
+### The Logic
+
+```
+If OL improvement = A points (baseline → end of OL)
+And placebo rebound = B points (end of OL → end of DB)
+Then:
+- B/A = rebound fraction
+- Higher B/A → stronger drug effect, less placebo contribution
+- Lower B/A → weaker drug effect, more placebo contribution
+```
+
+### Interpretation Table
+
+| Rebound Fraction (B/A) | Interpretation | Implication |
+|------------------------|----------------|-------------|
+| **>70%** | Strong drug effect | OL response was mostly drug, little placebo |
+| **40-70%** | Mixed signal | Some placebo contribution to OL response |
+| **<30%** | Suspicious | OL response had high placebo component |
+| **<15%** | Red flag | Drug effect likely overstated by OL data |
+
+### ACAD Example
+
+| Metric | Value |
+|--------|-------|
+| OL improvement | ~19 points (baseline → wk12) |
+| Placebo rebound in DB | 2-3 points |
+| Rebound fraction | 10-15% (2-3/19) |
+| Interpretation | **Red flag - OL response had high placebo component** |
+
+### Alternative Explanations
+
+WS offered two explanations:
+1. ADP response in OL questionable with high placebo effect
+2. ADP response is unusually durable
+
+**Critical Assessment:** If #2 were true, you'd expect similar durability in PDP (same drug, same receptor). But PDP shows expected behavior. Therefore #1 is more likely.
+
+### Cross-Indication Calibration
+
+| Population | Rebound Behavior | Drug Effect Interpretation |
+|------------|------------------|---------------------------|
+| **PDP** | Placebo rebounds significantly | Normal - drug effect real |
+| **ADP** | Placebo rebounds minimally | Suspicious - OL may have high placebo |
+
+This pattern supports the conclusion that **drug works better in PDP than ADP** in parallel designs.
+
+### Application Rule
+
+**When evaluating RW data:**
+
+1. Calculate OL improvement: A = Baseline - End_OL
+2. Calculate placebo rebound: B = End_DB - End_OL (for placebo arm)
+3. Calculate rebound fraction: B/A
+4. If B/A < 30%, flag as suspicious
+5. Cross-reference with comparator population if available
+6. Adjust parallel design expectations downward if rebound is low

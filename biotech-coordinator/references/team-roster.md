@@ -241,6 +241,7 @@ Reference file for team member roles, strengths, development areas, and coaching
 |------|-------------|--------|
 | 2026-01-27 | ACAD pitch: Strong reverend-bayes work (power table, E-R, cross-trial). Led with PoS. Gaps: no implied PoS comparison, thesis tension unresolved, incomplete citations. | Coaching to deliver |
 | 2026-01-27 | ACAD follow-up (AG/MM feedback): Missed 3 key patterns: (1) "Juice left to squeeze" - DB delta is marginal after OL ceiling, not "true" effect; (2) Cross-indication validation - should test methodology on PDP where ground truth exists; (3) NPIC non-linearity - didn't flag scale interpretation issues. Also missed: original PIMA wasn't powered for ADP subpop, QTc absence enables dose headroom. | Senior feedback received |
+| 2026-01-28 | ACAD response to AG/MM (Round 2): **Good engagement** - found DRP table showing stable drug arm, identified key placebo rebound anomaly (only 10-15% rebound after 18wks = suspicious), did cross-indication comparison (PDP vs ADP) per MM's request with 3 figures, arrived at quantified view (<3 delta in ADP based on 3.37 PDP parallel data). Defended his view with data while conceding valid points (SAPS-H+D granularity, 2x dosing helpful). **Gaps:** (1) Effect size 0.2 → power calc missing (what's PoS if ES=0.2, powered for 0.4?); (2) No implied PoS back-solve from stock price; (3) "Can ask mgmt" on dose-response without follow-up plan; (4) Dismissed NPIC→SAPS-H+D comparison without attempting conversion. Overall: B+ PM-level engagement with senior feedback. | Good progress |
 | | | |
 
 ---

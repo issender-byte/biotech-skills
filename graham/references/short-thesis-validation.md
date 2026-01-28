@@ -340,6 +340,140 @@ RECOMMENDATION:
 
 ---
 
+---
+
+## AA vs Full Approval Pathway Risk
+
+### The Pattern
+
+**If a competitor is on track for full approval before your accelerated approval (AA) PDUFA, FDA may question whether AA is still appropriate.**
+
+From MM's DYN analysis: *"The street remains concerned that a full approval for RNA ahead of DYN's AA PDUFA might put DYN's AA at risk."*
+
+### Why This Matters for Valuation
+
+| Scenario | AA Likelihood | Valuation Implication |
+|----------|---------------|----------------------|
+| No competitor with approval | High | Standard AA timeline |
+| Competitor with same-mechanism full approval | Lower | Regulatory uncertainty = discount |
+| Competitor with different-mechanism full approval | Medium | May still have unmet need argument |
+| Competitor full approval AFTER your AA | Low risk | AA bridges to your own full approval |
+
+### Framework: AA Pathway Risk Assessment
+
+```
+AA PATHWAY RISK ANALYSIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your drug: [Name] | Pathway: [AA/Full]
+Competitor: [Name] | Pathway: [AA/Full]
+
+1. TIMELINE COMPARISON
+   Your PDUFA: [Date]
+   Competitor PDUFA: [Date]
+   Who files/approves first? [Competitor/You]
+
+2. MECHANISM COMPARISON
+   Same target? [Y/N]
+   Same indication? [Y/N]
+   Same patient population? [Y/N]
+   Your differentiation: [List]
+
+3. UNMET NEED ARGUMENT
+   If competitor approved, what unmet need remains?
+   - Different patient subgroup? [Y/N]
+   - Better safety? [Y/N]
+   - More convenient dosing? [Y/N]
+   - Different MOA for non-responders? [Y/N]
+
+4. FDA PRECEDENT
+   Has FDA granted AA when full approval exists? [Y/N - examples]
+   Recent FDA signaling? [Any relevant guidance]
+
+RISK LEVEL: [High/Medium/Low]
+VALUATION IMPACT: [X% discount to base case]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### FDA Precedent Analysis
+
+| Scenario | FDA Typical Response | Examples |
+|----------|---------------------|----------|
+| AA before any approval exists | More willing to grant | Most oncology AA |
+| AA in subpopulation not covered | May still grant | Specific mutations |
+| AA for same population after full approval | Reluctant | Limited precedent |
+| AA with meaningful differentiation | Case-by-case | Safety, convenience |
+
+### Key Questions to Research
+
+1. **Has FDA granted AA in this indication after full approval existed?**
+   - If yes, what was the justification?
+   - If no, is your situation different?
+
+2. **What's the confirmatory trial requirement?**
+   - If your confirmatory = competitor's pivotal, FDA may question redundancy
+   - If confirmatory shows different population, stronger case
+
+3. **What did FDA say at your EOP2/pre-BLA meeting?**
+   - Any mention of competitive landscape?
+   - Specific guidance on AA vs full approval path?
+
+### Worked Example: DYN vs RNA in DM1
+
+```
+Your drug: DYN z-basivarsen | Pathway: AA (1Q28 PDUFA)
+Competitor: RNA | Pathway: Full Approval (YE27 PDUFA)
+
+1. TIMELINE
+   RNA PDUFA: YE27 (full approval)
+   DYN AA PDUFA: 1Q28
+   Risk: RNA approved ~3 months before DYN's AA decision
+
+2. MECHANISM
+   Same target? Yes - both TfR1-DMPK knockdown
+   Same indication? Yes - DM1
+   Same population? Yes - adult DM1
+   DYN differentiation: ?
+
+3. UNMET NEED
+   If RNA approved: What unmet need does DYN address?
+   - Different mechanism? No (same)
+   - Better efficacy? Unknown (Ph2 data "similar")
+   - Better safety? Unknown
+   - Better dosing? Unknown
+
+4. FDA PRECEDENT
+   No clear precedent for AA when full approval exists for same target/indication
+
+RISK LEVEL: Medium-High
+VALUATION IMPACT: Should discount AA pathway 10-20%
+```
+
+### Integration with Scenario Analysis
+
+In your scenario table, include AA pathway risk:
+
+| Scenario | Base PoS | AA Risk Adj | Final PoS | Peak Sales |
+|----------|----------|-------------|-----------|------------|
+| RNA succeeds, DYN AA granted | 50% | -10% | 40% | $X |
+| RNA succeeds, DYN AA denied | 50% | N/A | 10% | Delay -$Y |
+| RNA fails | 30% | N/A | 30% | $X (but Ph3 harder) |
+
+### Bear Thesis: AA Pathway Risk
+
+If building a bear case around AA pathway risk:
+
+**Checklist:**
+- [ ] Is competitor actually on track for full approval first?
+- [ ] Is the mechanism/population truly identical?
+- [ ] What's the FDA precedent for this scenario?
+- [ ] Is management discussing this risk on calls?
+- [ ] Is the market pricing this risk? (If not, potential short thesis)
+
+**Caution:** This is a longer-term thesis. Short-term, competitor validation may lift all boats. The AA risk crystalizes only if competitor succeeds AND FDA questions your AA path.
+
+---
+
 ## Key Takeaways
 
 1. **Challenge the methodology** - Price vs. volume, metric selection, projection assumptions
@@ -348,3 +482,4 @@ RECOMMENDATION:
 4. **Verify mechanism comparability** - Allosteric vs. orthosteric, selectivity, binding site
 5. **Beware "obvious" shorts** - If everyone sees it, it's probably priced in
 6. **Ask "what makes this wrong?"** - Best shorts survive contrarian challenge
+7. **Model AA pathway risk** - If competitor has full approval path ahead of your AA, discount accordingly

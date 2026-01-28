@@ -219,6 +219,85 @@ Use pillar scores to adjust base rate:
 4. If qualitative suggests strength not in quantitative (experienced sponsor, fast enrollment):
    - Apply 5% uplift (cap at +10%)
 
+## Event-Driven Trial Analysis
+
+### Framework 1: Event-Driven Parameter Back-Solving
+
+**The Question:** Given company's data timeline guidance for an event-driven trial, what does that imply about control arm performance and event trigger?
+
+**When to use:** Company guides topline data in [timeframe], trial is event-driven (prespecified number of events triggers analysis), and you want to constrain the solution space.
+
+**Methodology:**
+
+1. **Gather inputs:**
+   - Enrollment timeline (start, completion, rate per month)
+   - Sample size (N)
+   - Guided data readout date
+   - Minimum follow-up required (if any)
+
+2. **Back-solve for event requirements:**
+   - Calculate months from enrollment completion to guided readout
+   - Estimate minimum events needed = N × (1 - RFS_rate) for each arm
+   - Map: what RFS rates yield required events by guided date?
+
+3. **Build sensitivity table:**
+
+   | Control Arm RFS | Event Trigger (% of N) | Creto Arm Must Achieve | Trial Hits? |
+   |-----------------|------------------------|------------------------|-------------|
+   | 50% | 50% | ≥70% | Check dates |
+   | 55% | 55% | ≥72% | Check dates |
+   | 60% | 60% | ≥75% | Check dates |
+
+4. **Reality-check assumptions:**
+   - Is event trigger plausible vs typical trials?
+   - Does control arm estimate align with comps?
+   - Are enrollment + event timing internally consistent?
+
+**Example (CGON PIVOT-006):**
+- N=364, enrolled by Sept 2025, guided 1H26 data
+- Back-solving: requires ≤50-55% event trigger AND ≤55% control arm 12m RFS
+- Implication: Trial parameters suggest aggressive biology driving faster events than company initially projected
+
+**Key insight:** Data timing guidance constrains the solution space. Work backward to identify what must be true for guidance to hold.
+
+---
+
+### Framework 2: Enrollment Rate as Event Signal
+
+**The Question:** What does faster-than-expected enrollment AND sample size reduction tell us about event accrual?
+
+**Pattern:** If company (a) enrolled faster than comps AND (b) reduced sample size post-initiation → event accrual likely faster than planned → control arm doing worse than expected.
+
+**Methodology:**
+
+1. **Compare enrollment rates:**
+   - Your company: patients/month
+   - Comp trials in same indication: patients/month
+   - Ratio = faster/slower than expected
+
+2. **Check for sample size changes:**
+   - Original design N vs current N
+   - Timing of change (early vs late)
+   - Disclosed reason (if any)
+
+3. **Inference table:**
+
+   | Enrollment | Sample Size | Likely Interpretation |
+   |------------|-------------|----------------------|
+   | Faster | Reduced | Events accruing faster → control arm worse |
+   | Faster | Unchanged | Strong demand, events as expected |
+   | Slower | Unchanged | Events as expected or slower |
+   | Slower | Increased | Events slower than expected → control arm better |
+
+**Example (CGON vs URGN):**
+- CGON: ~18 pts/month, reduced from N=426 to N=364
+- URGN ATLAS: ~10-11 pts/month, no size change
+- Inference: CGON events accruing faster → control arm likely at lower end of expected range
+
+**Caution:** Enrollment speed can also reflect site enthusiasm, referral patterns, competition for patients—not just event rates. Triangulate with other data.
+
+---
+
 ## Output Format for Bayesian Mode
 
 ```

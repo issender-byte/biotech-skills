@@ -232,3 +232,100 @@ PORTFOLIO CONTEXT:
 FINAL SIZE: ___ bps
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
+
+
+---
+
+## Pattern 4: Position Sizing vs Catalyst Proximity
+
+### Core Framework (from DYN/NUVB analysis)
+
+**Start smaller before near-term catalysts, add after resolution.**
+
+The intuition: Binary events create asymmetric information. Before the event, you're betting on outcome. After the event, you're investing with known data.
+
+### Sizing by Catalyst Status
+
+| Catalyst Status | Recommended Size | Rationale |
+|-----------------|------------------|-----------|
+| **<1 month to catalyst** | 25-50% of target | High uncertainty, binary risk |
+| **1-3 months to catalyst** | 50-75% of target | Building conviction, monitoring |
+| **Catalyst resolved (positive)** | 100%+ of target | Known data, can analyze |
+| **Catalyst resolved (negative)** | Exit or reassess | Thesis invalidation |
+
+### Add Triggers
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Catalyst trigger** | Add after event resolves favorably | NUVL data positive → add NUVB short |
+| **Price trigger** | Add on technical level breach | Stock enters teens → add |
+| **Combined** | Both conditions must be met | Data positive AND price hits target |
+
+### DYN Worked Example
+
+**Context:** NUVB short thesis depends on NUVL competitor success. SRPT/PEPG data expected.
+
+**Sizing approach:**
+- Current size: 150 bps (75% of 200 bps target)
+- Rationale: Competitor data unresolved
+- Add trigger: SRPT/PEPG positive + NUVB enters teens
+- Target after resolution: 200-250 bps
+
+```
+Timeline:
+Now ─────────────────────► SRPT/PEPG data ──────────► 
+     75% size (150bps)        Resolution point
+                                    │
+                                    ▼
+                          [If positive + teens]
+                                    │
+                                    ▼
+                          Full size (200+ bps)
+```
+
+### Common Mistakes
+
+| Mistake | Problem | Correct Approach |
+|---------|---------|------------------|
+| Full-sizing before catalyst | Binary risk not compensated | Scale to 50-75% pre-event |
+| Not adding after positive data | Missed opportunity | Have explicit add triggers |
+| Waiting for "perfect" entry | Never reach target size | Set realistic triggers |
+| Ignoring catalyst clustering | Multiple binaries compound | Reduce size if multiple events |
+
+### Integration with Competitor-Contingent Analysis
+
+For competitor-dependent theses (NUVB depends on NUVL):
+
+1. **Pre-competitor data:** 50-75% of target
+2. **Competitor data positive:** Add to full size on your stock's price weakness
+3. **Competitor data negative:** Reassess thesis entirely
+
+This framework prevents thesis creep. You define ahead of time:
+- What competitor outcome you need
+- What price level triggers adding
+- What invalidates the thesis
+
+### Checklist
+
+```
+CATALYST PROXIMITY SIZING
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRE-CATALYST:
+□ Catalyst date: ___________
+□ Days to catalyst: ___
+□ Current size: ___ bps
+□ Target size (if positive): ___ bps
+□ Sizing discount applied: ___% 
+
+ADD TRIGGERS:
+□ Catalyst outcome required: ___________
+□ Price level for add: ___
+□ Combined or either: ___
+
+EXIT TRIGGERS:
+□ Catalyst outcome that invalidates: ___________
+□ Price level for exit: ___
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```

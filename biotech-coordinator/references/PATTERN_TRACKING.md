@@ -234,4 +234,52 @@ Files referenced in memory but not yet created:
 | 2026-01-27 | **AVTX (RP feedback):** Added 6 new patterns from RP: MEDI8968 failure read-through, biomarker validates dosing, target engagement ≠ efficacy, time-course consistency, error bar discipline, positive control benchmarking. Updated ta-hidradenitis-suppurativa.md, analytical-rules.md (now 53 rules with new Time-Course section 38-42), team-roster.md (ZH development area #4). Created time-course-kinetics.md (NEW comprehensive reference). 46 files. |
 | 2026-01-27 | **APGE E-R Analysis (RP):** Added 5 new patterns from RP's E-R deep dive: withdrawal durability floor, biomarker→MEC threshold mapping, AE dose-response direction, placebo inflation risk, Ctrough ratio cross-molecule inference. Updated pk-pd-exposure-response.md (3 patterns), cross-trial-comparison.md (2 patterns as Part 6-7). 23 case studies. |
 | 2026-01-27 | **CGON PIVOT-006 (LA):** Added 5 new patterns from LA's IR NMIBC analysis: US periop chemo adoption reality (10-15%), trial design signals, management Q&A gap-filling, FDA control precedent, cross-trial efficacy hierarchy. Created ta-bladder-cancer.md (NEW). LA showed major development - stated view with numbers (50-65% control, 15-20% delta). 47 files. |
-| 2026-01-27 | **AVTX IC50 (ZH):** Added Exposure/IC50 Ratio Comparison pattern to pk-pd-exposure-response.md. Pattern: normalize cross-molecule comparisons to Ctrough/IC50; receptor blockers vs ligand neutralizers require different calculations; Anakinra paradox. Updated team-roster.md with ZH progress. |
+| 2026-01-27 | **AVTX IC50 (ZH):** Added Exposure/IC50 Ratio Comparison pattern to pk-pd-exposure-response.md. Pattern: normalize cross-molecule comparisons to Ctrough/IC50; receptor blockers vs ligand neutralizers require different calculations; Anakinra paradox. Updated team-roster.md with ZH progress.
+| 2026-01-28 | **ACAD WS Round 2:** Evaluated WS response to AG/MM. Good engagement - did cross-indication validation (PDP vs ADP), identified placebo rebound anomaly (10-15%), defended view with data. Gaps: no power calc from ES estimate, no implied PoS, deferred dose-response question. Added management call questions to Action Items. Updated team-roster.md. | |
+
+---
+
+## Action Items
+
+### ACAD Dose-Response Management Call Questions (for WS follow-up)
+
+AG raised: "Lack of QTc prolongation enables higher dosing. We don't know what the dose response looks like in ADP."
+
+WS deferred: "Can ask mgmt if they have additional data to support this."
+
+**Specific questions for management:**
+
+1. **Preclinical E-R data:**
+   - What does the preclinical model show for dose-response in efficacy?
+   - Is there a ceiling effect at higher exposures?
+   - At what exposure multiple (vs approved Nuplazid dose) does efficacy plateau?
+
+2. **PDP dose-response:**
+   - In the PDP trials, was there a dose-response relationship?
+   - What was the magnitude of difference between dose cohorts?
+   - Can you share the PK-PD analysis from PDP?
+
+3. **ADP-204 dose selection rationale:**
+   - How was the 2x dose selected for ADP-204?
+   - Was this based on E-R modeling, or safety margin, or both?
+   - What exposure (Ctrough, AUC) are you targeting vs Nuplazid?
+
+4. **Expected effect size:**
+   - What effect size is the company powering for?
+   - What's the company's base case for SAPS-H+D delta?
+   - How does this compare to your internal expectations for Nuplazid if it could be dosed 2x higher?
+
+5. **Competitive context:**
+   - Are there any head-to-head comparisons planned?
+   - How do you think about differentiation vs other pipeline assets in ADP?
+
+**Why this matters for thesis:**
+
+The bull case rests on "2x dosing enables superior efficacy via E-R." But this thesis requires:
+- Evidence that E-R curve isn't plateauing (WS's concern)
+- Evidence that higher exposure → better efficacy in relevant population
+- Quantification of the expected improvement vs Nuplazid
+
+Without this data, the "better dosing" thesis is unsubstantiated.
+
+---

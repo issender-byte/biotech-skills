@@ -522,6 +522,135 @@ Combine Ctrough ratio with:
 
 ---
 
+## Part 8: Regulatory Precedent as Control Arm Validation (from CGON/LA)
+
+### The Pattern
+
+**If FDA accepted another company's trial with the same control arm design, that validates your control arm choice and reduces regulatory rejection risk arguments.**
+
+### Why This Matters
+
+Bears often argue "Trial isn't SOC" or "Control arm won't be acceptable to FDA." If another company recently received FDA approval or clearance for an identical control arm design, that argument is weakened.
+
+### Methodology
+
+1. **Identify your control arm design** (observation, active comparator, placebo, etc.)
+2. **Search for regulatory precedent:**
+   - Recent FDA approvals with same control
+   - Ongoing trials with same design + FDA feedback (SPA, EOP2)
+   - Advisory committee discussions
+3. **Assess comparability:**
+   - Same indication?
+   - Same population?
+   - Same endpoint hierarchy?
+4. **If precedent exists:** Neutralizes "not SOC" bear argument
+5. **If no precedent:** Flag as legitimate regulatory risk
+
+### Example: CGON PIVOT-006
+
+| Factor | CGON PIVOT-006 | RLMD Trial | Match? |
+|--------|---------------|------------|--------|
+| Indication | IR NMIBC | IR NMIBC | ✓ |
+| Control arm | TURBT + observation | TURBT + observation | ✓ |
+| Primary endpoint | RFS rate | RFS rate | ✓ |
+| FDA acceptance | N/A | **Approved design** | Precedent |
+
+**Conclusion:** FDA allowed RLMD to use TURBT + observation as control in IR NMIBC Phase 3 → CGON's identical design has regulatory precedent → "not SOC" argument neutralized.
+
+### When Precedent Does NOT Neutralize Risk
+
+| Situation | Precedent Validity |
+|-----------|-------------------|
+| Identical indication + population + endpoint | Strong |
+| Same indication, different population | Moderate - check population overlap |
+| Same indication, different endpoint | Weak - FDA may view differently |
+| Different indication, same control | Weak - indication-specific concerns |
+| Precedent from >5 years ago | Moderate - guidelines may have changed |
+
+### Source: LA CGON Analysis (Jan 2025)
+
+> "The fact that FDA recently allowed RLMD to use 'TURBT + observation' as the control arm for their Ph3 in IR NMIBC also suggests that the FDA does not consider TURBT + intravesical chemo as the SOC in IR NMIBC."
+
+---
+
+## Part 9: Geographic Practice Variation in Control Arm Estimates (from CGON/LA)
+
+### The Pattern
+
+**Ex-US trial data often overstates US practice patterns. When estimating US control arm performance, adjust for geographic variation in SOC adoption.**
+
+### Why This Matters
+
+Trials conducted primarily ex-US may show high adoption of a practice (e.g., perioperative chemo) that is rare in US clinical practice. Using those trials as benchmarks for US-only trials will systematically bias control arm estimates.
+
+### Example: Perioperative Chemo in IR NMIBC
+
+| Source | Adoption Estimate | Geography | Population |
+|--------|------------------|-----------|------------|
+| Mike's trial comps | ~100% (all included) | Ex-US | LG/solitary Ta |
+| Lee 2022 | ~10-15% | US | All IR NMIBC |
+| Lewicki 2022 | ~10-15% | US | All IR NMIBC |
+| **US Reality** | **10-15%** | **US** | **Broad IR NMIBC** |
+
+**Why US Adoption Lower:**
+1. Operationally cumbersome in real OR workflows
+2. Fear of chemo-related AEs
+3. Contraindications common (bleeding, UTI)
+4. Perceived payoff modest (NCCN: "most efficacious in low-grade, low-volume Ta, not effective in higher-risk")
+
+### Adjustment Framework
+
+| Your Trial Geography | Control Arm Benchmark Source | Adjustment Needed? |
+|---------------------|------------------------------|-------------------|
+| US-only | US database studies | No |
+| US-only | Ex-US trials | Yes - discount SOC adoption |
+| Global | Global trials | No |
+| Ex-US only | Ex-US trials | No |
+
+### Methodology: Adjusting for US Practice
+
+```
+Step 1: Identify the SOC component in question (e.g., periop chemo)
+Step 2: Find US-specific adoption data
+   - Database studies (SEER, Marketscan, Optum)
+   - Published US practice surveys
+   - KOL estimates
+Step 3: Calculate blended control arm estimate
+   - Control_US = (Adoption_US × SOC_efficacy) + ((1-Adoption_US) × No_SOC_efficacy)
+Step 4: Compare to ex-US trial benchmarks
+Step 5: Use US-adjusted estimate if your trial is US-only
+```
+
+### Example Calculation
+
+**CGON PIVOT-006 (US-only, IR NMIBC):**
+
+| Component | Value | Source |
+|-----------|-------|--------|
+| Periop chemo adoption in US | 10-15% | Lee 2022, Lewicki 2022 |
+| 12m RFS with periop chemo | 65-75% | Trial data |
+| 12m RFS without periop chemo | 50-60% | Trial data (TURBT alone) |
+
+**Blended estimate:**
+- Low: (15% × 65%) + (85% × 50%) = 52%
+- High: (15% × 75%) + (85% × 60%) = 62%
+- **US-adjusted range: 52-62%** (vs ex-US benchmark of 85-88%)
+
+### When This Matters Most
+
+| Condition | Impact of Geographic Adjustment |
+|-----------|--------------------------------|
+| US-only trial + SOC rarely adopted in US | High - large adjustment needed |
+| Global trial + US is minority of sites | Low - ex-US dominates |
+| SOC adoption similar across regions | Low - no adjustment needed |
+| SOC is clearly defined (e.g., IV chemo) | Low - less practice variation |
+
+### Source: LA CGON Analysis (Jan 2025)
+
+> "The adoption of such practices is just a low % in the US (my estimate is ~10-15% based on the recent database, Lee 2022 and Lewicki 2022) due to a numbers of reasons... It can be also seen by the fact that all the chemo data from Mike's data table was from ex-US studies in low-grade or solitary Ta patients."
+
+---
+
 ## Key Takeaways
 
 1. **Set explicit bars** - "Need >93% to derisk" not "hope it's good"
@@ -530,3 +659,5 @@ Combine Ctrough ratio with:
 4. **Track launch overhang** - First-mover underwhelm de-rates entire space
 5. **Quantify PoS for specific thresholds** - "65% PoS for >90% CR" not "bullish"
 6. **Use big pharma trials as benchmark** - Small biotech comparator arms are unreliable
+7. **Check regulatory precedent** - If FDA accepted same design elsewhere, "not SOC" argument is weakened
+8. **Adjust for US practice reality** - Ex-US trials often overstate US SOC adoption

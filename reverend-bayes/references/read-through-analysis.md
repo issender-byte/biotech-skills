@@ -306,6 +306,141 @@ Gap: [Comfortable / Tight / Risky]
 
 ---
 
+---
+
+## Part 4: Clinical Bar for Read-Through
+
+### The Pattern
+
+**Not all competitor "successes" validate your thesis equally. Define what competitor success means for YOUR position.**
+
+MM on DYN: *"I think as long as RNA pivotal DM1 trial hits stats (and has a >=2sec+ spread at 6m mark), DYN should be higher than here ($18)."*
+
+This is the right approach — specific, quantified, time-anchored.
+
+### Why This Matters
+
+| Outcome Type | Thesis Implication |
+|--------------|--------------------|
+| Clear positive (beats bar) | Read-through works, your stock re-rates |
+| Stats sig but weak (meets minimum) | Ambiguous — may not validate your thesis |
+| Near-miss (fails narrowly) | Negative — casts doubt on mechanism |
+| Clear failure | Your stock goes to cash |
+
+**The gap between "stats sig" and "validates thesis" is where trades are won or lost.**
+
+### Framework: Setting the Clinical Bar
+
+```
+CLINICAL BAR FOR READ-THROUGH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Competitor: [Company/Drug]
+Trial: [Ph2/Ph3] | Indication: [X] | Readout: [Date]
+
+1. PRIMARY ENDPOINT
+   Endpoint: [e.g., vHOT]
+   Stats bar: [p<0.05, HR<0.X, etc.]
+   
+2. EFFECT SIZE THRESHOLD
+   What delta validates mechanism?
+   - Minimum: [e.g., >1sec vHOT delta]
+   - Meaningful: [e.g., >=2sec vHOT delta]
+   - Differentiated: [e.g., >3sec vHOT delta]
+   
+3. TIMEPOINT
+   At what timepoint must efficacy be shown?
+   [e.g., 6 months, not just 12 months]
+   
+4. SECONDARY ENDPOINTS
+   What else needs to move?
+   [e.g., "and stats on other functions"]
+   
+5. SAFETY BAR
+   What would be disqualifying?
+   [e.g., liver tox, cardiac signal]
+
+SCENARIO MAPPING:
+| Outcome | Probability | Your Stock |
+|---------|-------------|------------|
+| Beats bar + secondaries | X% | +A% |
+| Meets minimum only | Y% | +B% (less) |
+| Fails stats | Z% | -C% |
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Worked Example: RNA for DYN Read-Through
+
+```
+Competitor: RNA (Avidity)
+Trial: Ph3 DM1 pivotal | Readout: 2H26
+
+1. PRIMARY ENDPOINT
+   Endpoint: vHOT (vertical hand opening time)
+   Stats bar: p<0.05, only need 1sec delta to hit
+   
+2. EFFECT SIZE THRESHOLD
+   What validates DYN thesis?
+   - Minimum: Stats sig (>1sec) — "highly powered to hit"
+   - Meaningful: >=2sec delta at 6m — "DYN should be higher"
+   - Differentiated: >3sec — Platform clearly works
+   
+3. TIMEPOINT
+   6 month mark, not just end-of-study
+   (Early separation = durable effect)
+   
+4. SECONDARY ENDPOINTS
+   "Stats on other functions" preferred but not required
+   
+5. SAFETY BAR
+   No novel safety signals for TfR1 conjugate approach
+
+SCENARIO MAPPING (from MM):
+| Outcome | Odds | DYN Move |
+|---------|------|----------|
+| vHOT hits + other functions | 20% | +129% to $41 |
+| vHOT hits, no trend on others | 40% | +22% to $22 |
+| vHOT fails | 40% | -48% to $9 |
+```
+
+### Common Mistakes
+
+| Mistake | Why It's Wrong | Better Approach |
+|---------|----------------|------------------|
+| "If they hit stats" | Stats sig ≠ meaningful efficacy | Define effect size threshold |
+| "If they win" | Binary thinking misses gradations | Map multiple scenarios |
+| "Similar data" | What makes data "similar"? | Quantify the comparison |
+| Ignoring timepoint | Early vs late separation matters | Specify when to measure |
+| Forgetting safety | Safety failure also breaks thesis | Include as scenario |
+
+### Timepoint Selection Principles
+
+| Indication Type | Key Timepoint | Rationale |
+|-----------------|---------------|------------|
+| Chronic disease | 6-12 months | Need durability |
+| Acute intervention | 30-90 days | Early signal matters |
+| Oncology PFS/OS | Landmark (1yr, 2yr) | Kaplan-Meier milestones |
+| Rare disease | Often longer | Slow disease progression |
+
+### Integration with Position Sizing
+
+Once you define the clinical bar, size accordingly:
+
+| Your Confidence in Bar | Position Size |
+|------------------------|---------------|
+| Competitor will beat bar | Full size |
+| Competitor will meet minimum | Reduced size |
+| Unsure if competitor meets bar | Half size or wait |
+| Bar may not differentiate | Question the thesis |
+
+### Cross-Reference
+
+- For valuation impact of different scenarios, see `graham/references/short-thesis-validation.md`
+- For position sizing mechanics, see `keynes/references/catalyst-playbook.md` (Competitor-as-Catalyst Framework)
+- For Ph2 data comparison methodology, see Part 1-3 of this file
+
+---
+
 ## Integration with Standard PoS Framework
 
 Read-through analysis is **complementary** to the 6-pillar PoS framework:
