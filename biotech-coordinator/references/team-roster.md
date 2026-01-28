@@ -156,7 +156,7 @@ Reference file for team member roles, strengths, development areas, and coaching
 | Date | Observation | Status |
 |------|-------------|--------|
 | 2026-01-26 | AVTX analysis: Excellent mechanistic work, no stated view, no commercial connection | Coaching delivered |
-| | | |
+| 2026-01-27 | CGON PIVOT-006: **Major improvement on stated view** - provided 50-65% control range, 15-20% delta point estimate, narrow success window parameters. Built simulations (Ming Zhu verified). Excellent provenance (Lee/Lewicki 2022, EORTC, NCCN 2024, management Q&A, KOL feedback). Cross-trial meta-analysis for HR NMIBC. Still needs commercial integration (no peak sales connection). | Coaching delivered |
 
 ---
 
