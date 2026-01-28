@@ -2,7 +2,7 @@
 
 Meta-document tracking analytical patterns extracted from institutional debates, mapped to skills, with implementation status.
 
-**Current file count: 47** (Update this number when adding files)
+**Current file count: 49** (Update this number when adding files)
 
 ---
 
@@ -69,6 +69,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | **ACAD ADP Analysis (WS)** | Jan 2026 | ACAD | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, 2nd gen comparison framework, power table construction |
 | **APGE E-R Analysis (RP)** | Jan 2026 | APGE | Withdrawal floor, biomarker→MEC mapping, AE dose-response direction, placebo inflation risk, Ctrough ratio cross-molecule |
 | **CGON PIVOT-006 (LA)** | Jan 2026 | CGON | US periop chemo adoption reality, trial design signals, management Q&A gap-filling, FDA control precedent, cross-trial efficacy hierarchy |
+| **OCUL Internal Debate** | Jan 7, 2026 | OCUL, EYPT, KOD | Rescue paradox, baseline severity confound, maintenance vs induction potency, KOD failure read-through, drug delivery uncertainty |
 
 ---
 
@@ -98,6 +99,7 @@ When user provides raw materials (emails, DD notes, management calls):
 | 20 | AVTX | john-snow | HS market dynamics, IL-1 pathway, NLRP3 read-through, bermekimab correction, **MEDI8968 failure read-through**, **biomarker validates dosing**, **time-course kinetics**, **error bar discipline** | ta-hidradenitis-suppurativa.md |
 | 21 | LEGN | john-snow | CAR-T commercial, site-of-care, supply utilization | cell-therapy-commercial.md |
 | 22 | ACAD | reverend-bayes | RW vs parallel delta compression, SD by design phase, E-R plateau skepticism, power tables, "juice left to squeeze", cross-indication validation, NPIC non-linearity, QTc dose headroom | randomized-withdrawal-design.md, pk-pd-exposure-response.md, scale-properties.md |
+| 23 | OCUL | reverend-bayes, john-snow | Rescue paradox (MM), baseline severity confound (MZ), maintenance vs induction potency (RP), KOD failure read-through, drug delivery uncertainty | ta-ophthalmology.md, ta-ophthalmology-commercial.md |
 
 ---
 
@@ -138,6 +140,11 @@ When user provides raw materials (emails, DD notes, management calls):
 | Placebo inflation risk | If placebo >50% higher than historical, use delta as primary metric | APGE (RP) | cross-trial-comparison.md | ✅ |
 | Ctrough ratio cross-molecule | If your Ctrough > competitor's at known efficacy interval, that's your floor | APGE (RP) | cross-trial-comparison.md | ✅ |
 | Exposure/IC50 ratio comparison | Normalize cross-molecule comparisons to Ctrough/IC50; receptor blockers vs ligand neutralizers need different calculations | AVTX (ZH) | pk-pd-exposure-response.md | ✅ |
+| **Rescue paradox** | Drug that delays rescue but doesn't prevent it may show better RFR but worse BCVA | OCUL (MM) | ta-ophthalmology.md | ✅ |
+| **Baseline severity confound** | Phase 1 in sick populations doesn't predict Phase 3 in milder populations | OCUL (MZ) | ta-ophthalmology.md | ✅ |
+| **Maintenance vs induction potency** | Drugs can fail in naïve but succeed in maintenance (less drug needed to sustain than reverse) | OCUL (RP) | ta-ophthalmology.md | ✅ |
+| **KOD failure read-through** | Fixed dosing + low potency = failure in subset with aggressive disease | OCUL (MZ) | ta-ophthalmology.md | ✅ |
+| **Drug delivery uncertainty** | Novel delivery mechanisms may not reach target tissue; check PK at site of action | OCUL (MM) | ta-ophthalmology.md | ✅ |
 | US periop chemo adoption reality | Database studies (Lee 2022, Lewicki 2022) show 10-15% US adoption, not majority; ex-US studies overstate | CGON (LA) | ta-bladder-cancer.md | ✅ |
 | Trial design signals | Sample size reduction post-initiation signals faster enrollment and/or events; interrogate management | CGON (LA) | analytical-rules.md | ✅ |
 | Management Q&A gap-filling | Direct management engagement fills specific analytical gaps (enrollment composition, stratification) | CGON (LA) | analytical-rules.md | ✅ |
@@ -154,6 +161,8 @@ When user provides raw materials (emails, DD notes, management calls):
 | Site-of-care dynamics | Community vs tertiary split, hub-and-spoke | LEGN | cell-therapy-commercial.md | ✅ |
 | Intraquarter tracking | Script → revenue calibration | SLNO | intraquarter-commercial-tracking.md | ✅ |
 | Bolus product commercial | PSF tracking, TAM depletion | PGEN | bolus-product-commercial.md | ✅ |
+| **Ophthalmology durability positioning** | Market values durability (Vabysmo); 6-month dosing differentiated but efficacy trade-off matters | OCUL | ta-ophthalmology-commercial.md | ✅ |
+| **Durability vs efficacy trade-off** | If BCVA gap too large (>3 letters), durability benefit evaporates | OCUL (MM) | ta-ophthalmology-commercial.md | ✅ |
 | Molecule ownership history | Multiple ownership changes = prior owners saw limited value | AVTX | (to add) | ⏳ |
 | SSE vs DSE biosimilar dynamics | Switching vs de novo erosion; DSE unlikely in severe disease | AVTX | (to add) | ⏳ |
 | Clinical bar definition | Commercial must define efficacy thresholds for each scenario | AVTX | SKILL.md (handoff section) | ✅ |
@@ -238,6 +247,7 @@ Files referenced in memory but not yet created:
 | 2026-01-28 | **ACAD WS Round 2:** Evaluated WS response to AG/MM. Good engagement - did cross-indication validation (PDP vs ADP), identified placebo rebound anomaly (10-15%), defended view with data. Gaps: no power calc from ES estimate, no implied PoS, deferred dose-response question. Added management call questions to Action Items. Updated team-roster.md. |
 | 2026-01-28 | **Effect Size Gap Framework:** Added Framework 3 to statistical-framework.md. Template for: back-solve trial N from powered ES → calculate power at analyst ES → translate to endpoint units → PoS with regulatory haircut → market comparison. ACAD worked example included. Completes reverend-bayes→graham→keynes→simons chain. |
 | 2026-01-28 | **ACAD Graham Analysis (Worked Example):** Completed WS's missing step. Stock at $26.50, EV $3.65B. Base business (NUPLAZID + DAYBUE) = $3.65-4.55B. Implied pipeline = $0 to negative. Market implied PoS = 0-10% vs WS's 20-25%. **Finding: NOT A SHORT** - market already prices in failure. Added full worked example to short-thesis-validation.md with pattern: "Bearish ≠ Short" - edge comes from gap between your PoS and market implied, not absolute PoS level. |
+| 2026-01-28 | **OCUL Internal Debate (Jan 7, 2026):** Extracted 7 new patterns from ZH/RP/MM/MZ debate. Created ta-ophthalmology.md (NEW) with: Rescue paradox (MM's key insight), baseline severity confound (MZ), maintenance vs induction potency (RP), KOD failure read-through (MZ), drug delivery uncertainty (MM). Created ta-ophthalmology-commercial.md (NEW) with durability positioning framework. 49 files, 23 case studies. |
 
 ---
 

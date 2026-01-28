@@ -197,3 +197,5 @@ RECOMMENDED DILIGENCE:
 | `references/pah-pulmonary.md` | PAH/pulmonary indications |
 | `references/ta-hematology-mf.md` | Hematology, myelofibrosis |
 | `references/scale-properties.md` | Non-linear scales, floor/ceiling effects, effect size interpretation |
+| `references/ta-ophthalmology.md` | Retinal disease (wAMD, DME), rescue paradox, baseline severity confound |
+| `references/ta-bladder-cancer.md` | NMIBC, perioperative chemo adoption, TURBT-based endpoints |

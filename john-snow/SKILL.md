@@ -386,3 +386,4 @@ Before completing analysis, verify:
 | `references/product-transition-commercial.md` | SKU discontinuation, forced adoption, device bundling |
 | `references/cell-therapy-commercial.md` | **CAR-T, site-of-care dynamics, supply utilization** |
 | `references/ta-hidradenitis-suppurativa.md` | HS competitive landscape, IL-1/IL-17 dynamics |
+| `references/ta-ophthalmology-commercial.md` | Retinal disease (wAMD, DME), durability positioning, rescue paradox commercial impact |
