@@ -326,3 +326,202 @@ Key Sensitivities:
 - If placebo +5%: [-Y%]
 - If effect lower CI: [-Z%]
 ```
+
+
+---
+
+## Framework 3: Effect Size Gap Power Analysis
+
+### When to Use
+
+You have:
+- Company's powering assumption (ES_powered)
+- Your own effect size estimate (ES_analyst)
+- ES_analyst < ES_powered
+
+**Goal:** Quantify how underpowered the trial is given your view, and translate to PoS.
+
+### Step 1: Back-Solve Trial Parameters
+
+If company powers at 80% for ES_powered (standard):
+
+```
+n per arm ≈ 2 × ((1.96 + 0.84) / ES_powered)²
+n per arm ≈ 2 × (2.80 / ES_powered)²
+n per arm ≈ 15.68 / ES_powered²
+```
+
+| ES_powered | n per arm (80% power) | Total N |
+|------------|----------------------|---------|
+| 0.30 | 175 | 350 |
+| 0.35 | 128 | 256 |
+| 0.40 | 98 | 196 |
+| 0.45 | 78 | 156 |
+| 0.50 | 63 | 126 |
+
+### Step 2: Power at Your Effect Size
+
+Given n per arm from Step 1, calculate power at ES_analyst:
+
+```
+λ (non-centrality) = ES_analyst × √(n per arm / 2)
+Power = Φ(λ - 1.96)  [one-sided approximation]
+```
+
+**Quick Reference Table (n=100 per arm, α=0.05 two-sided):**
+
+| ES_analyst | λ | Power |
+|------------|---|-------|
+| 0.10 | 0.71 | 11% |
+| 0.15 | 1.06 | 18% |
+| 0.20 | 1.41 | 29% |
+| 0.25 | 1.77 | 42% |
+| 0.30 | 2.12 | 56% |
+| 0.35 | 2.47 | 69% |
+| 0.40 | 2.83 | 81% |
+| 0.45 | 3.18 | 89% |
+| 0.50 | 3.54 | 94% |
+
+**Scaling for different n:**
+```
+Power at n' = Power at n=100 scaled by √(n'/100)
+```
+
+### Step 3: Translate ES to Endpoint Units
+
+```
+Delta (points) = ES × SD
+```
+
+Need SD from:
+- Phase 2 data (preferred)
+- Literature comps
+- Trial protocol/SAP
+
+| Endpoint Type | Typical SD Range |
+|---------------|------------------|
+| Psychiatric scales (PANSS, SAPS) | 7-12 |
+| Pain (NRS 0-10) | 2-3 |
+| Rheum (ACR components) | Varies by measure |
+| Resp (FEV1 % predicted) | 10-15 |
+| Derm (EASI, IGA) | Scale-dependent |
+
+### Step 4: PoS Calculation
+
+```
+PoS = P(hit stats) × P(approval | hit stats)
+```
+
+**P(approval | hit stats) adjustments:**
+
+| Scenario | P(approval | hit) |
+|----------|-------------------|
+| Strong efficacy (ES > powered) | 90-95% |
+| Adequate efficacy (ES ≈ powered) | 85-90% |
+| Weak efficacy (ES = 50-75% of powered) | 70-85% |
+| Marginal efficacy (ES < 50% of powered) | 50-70% |
+| Prior regulatory concern (CRL history) | -10-15% |
+
+### Step 5: Output Template
+
+```
+EFFECT SIZE GAP ANALYSIS: [TICKER] [TRIAL NAME]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TRIAL PARAMETERS:
+- Primary endpoint: ____________
+- Company's powered ES: ____
+- Implied n per arm: ____
+- Total N: ____
+
+ANALYST VIEW:
+- Estimated ES: ____
+- Rationale: ____________
+- ES gap: ____ (____% of powered)
+
+POWER SENSITIVITY:
+| ES | Power | Delta (SD=__) |
+|----|-------|---------------|
+| [analyst -0.05] | ___% | ___ pts |
+| [analyst] | ___% | ___ pts |
+| [analyst +0.05] | ___% | ___ pts |
+| [powered] | 80% | ___ pts |
+
+PoS CALCULATION:
+- P(hit stats) at analyst ES: ____%
+- P(approval | hit): ____%
+- PoS: ____%
+
+MARKET IMPLIED COMPARISON:
+- Current implied PoS: ____%
+- Gap (analyst - market): ____ pp
+- Directional view: LONG / SHORT / NO EDGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Worked Example: ACAD ADP-204
+
+```
+EFFECT SIZE GAP ANALYSIS: ACAD ADP-204
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TRIAL PARAMETERS:
+- Primary endpoint: SAPS-H+D (CFB)
+- Company's powered ES: 0.40
+- Implied n per arm: ~100
+- Total N: ~200
+
+ANALYST VIEW (WS):
+- Estimated ES: 0.20
+- Rationale: PDP parallel delta 3.37 pts, ADP should be 
+  lower based on cross-indication comparison + placebo 
+  rebound anomaly (only 10-15% rebound in ADP RW)
+- ES gap: 0.20 (50% of powered)
+
+POWER SENSITIVITY (SD=8 assumption):
+| ES   | Power | Delta    |
+|------|-------|----------|
+| 0.15 | 18%   | 1.2 pts  |
+| 0.20 | 29%   | 1.6 pts  |
+| 0.25 | 42%   | 2.0 pts  |
+| 0.40 | 81%   | 3.2 pts  |
+
+PoS CALCULATION:
+- P(hit stats) at ES=0.20: 29%
+- P(approval | hit): 70% (weak efficacy + PIMA CRL precedent)
+- PoS: 20%
+
+MARKET IMPLIED COMPARISON:
+- Current implied PoS: [TBD - graham step]
+- Gap (analyst - market): [TBD]
+- Directional view: [TBD]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Common Pitfalls
+
+| Pitfall | Problem | Fix |
+|---------|---------|-----|
+| Using powered ES as "expected" | Overstates PoS | Always discount for shrinkage |
+| Ignoring SD uncertainty | Delta range too narrow | Use SD range, not point |
+| Skipping P(approval\|hit) | PoS too high for weak efficacy | Apply regulatory haircut |
+| No market comparison | Can't act on PoS | Complete the graham step |
+| Point estimate only | False precision | Report range (ES ± 0.05) |
+
+### Integration with Other Frameworks
+
+This framework feeds into:
+- **graham:** PoS → rNPV → fair value
+- **keynes:** PoS gap vs market → position direction
+- **simons:** PoS confidence → position sizing
+
+**The complete chain:**
+```
+reverend-bayes: ES estimate → Power → PoS
+      ↓
+graham: PoS → rNPV → implied PoS from price
+      ↓
+keynes: PoS gap → directional view → catalyst timing
+      ↓
+simons: Conviction + edge → position size
+```
